@@ -14,7 +14,7 @@
 | −$266 → $0 front gross per unit | 1 |
 | 120 units a month | 1 |
 | Time to line 8.5 → 5.0 days | 8 |
-| 203 units on the ground | 9 |
+| 107 retailable units on the ground | 9 |
 | 59% appointment show rate | 10 |
 
 Every other number lives in the speaker notes (spoken, not shown) or on the backup sheet. The $400 spiff appears on slide 4 as a policy term per the brief — flag if you want it off the slide.
@@ -176,7 +176,7 @@ Every other number lives in the speaker notes (spoken, not shown) or on the back
 ## Slide 9 — Recon: Exit Strategy Up Front
 **Speaker: JOHN**
 
-### 203 on the ground. Every one gets a decision.
+### 107 retailable on the ground. Every one gets a decision.
 
 - Daily trade walk: every unit gets a call *before* recon — retail, dispose, service-only, or decline
 - Hard gate: no unit is authorized into recon without a logged disposition decision
@@ -254,3 +254,9 @@ Every other number lives in the speaker notes (spoken, not shown) or on the back
 3. **247 / 145 / 74%** are in slide 10's speaker notes (spoken), not on the slide — protecting the five-number rule. The brief's slide table implied them on-slide; this is the deliberate deviation to check.
 4. **Channel goals (58/36/12–20/14)** are spoken on slide 3, not shown. They're on the backup sheet.
 5. **Missing data, flagged not filled:** appointments-by-source exists only for two sources in the plan (TV: 92 set / 49 showed; CarGurus: 51 → 31) — the Phase 4 backup sheet's lead table will carry a "not in source" mark for the rest. CRM response-time unit is unverified by design — that's the ask. CPO net-per-unit is symbolic pending the Week-1 data pull. Write-down is a placeholder range pending Week-1 sizing.
+
+---
+
+## Correction — 7/27 (post-Gate 4)
+
+Per Rob: the operating inventory basis is **107 retailable used vehicles in stock today**, hovering ~100 the past two months, building to **120 retailable** and turning it **at least month over month, if not more**. The 203 figure was the total lot (verified 7/14, including non-retailable units). Slide 9's metric is now "107 retailable on the ground"; the Goal slide's speaker notes carry the stock model; the volume goal remains 120 units a month by November. Deck and backup sheet updated accordingly.
