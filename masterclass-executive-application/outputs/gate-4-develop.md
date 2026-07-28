@@ -1,6 +1,6 @@
 # Gate 4 — DEVELOP
 
-Status: READY FOR ROB'S APPROVAL — 2026-07-28 (voice editor, confidentiality auditor, and red team simulated in-session per principle 8)
+Status: ✅ APPROVED — 2026-07-28. Rob's six follow-up answers mapped to the Gates 2/3 confirmation list (naming approved, store generic, employer boundary confirmed, no trigger anecdote); all five Gate 4 wording items resolved to their stated defaults. Draft unchanged; advanced to final audit.
 
 ## Draft 1 (architecture-faithful first pass, 276 words)
 
