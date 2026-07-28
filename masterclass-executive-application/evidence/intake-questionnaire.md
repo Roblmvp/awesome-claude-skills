@@ -55,7 +55,32 @@ Answer in plain language. Rough notes beat polished paragraphs — the raw truth
 - Disclosure posture: everything about Rob himself is safe; "don't hold back" — USER-STATED blanket approval for Rob-personal detail. Standing third-party rules still apply (customers, employees, dealership financials, vendor internals). Naming Vyaxis/PaceIQ/tradeIQ publicly: NEEDS ROB APPROVAL (Round 2, Q6)
 - Rob's exact title, store, and timeline: NEEDS VERIFICATION (Round 2, Q1)
 
-### Round 2 — asked 2026-07-28, awaiting answers
+### Round 2 — answered 2026-07-28 (verbatim)
+
+**Gate 1 decision:** "1. Approve" — Story 1 approved as primary lane.
+
+**Q1 (role & timeline):** "General Sales Manager Gallatin CDJR December 2025. It started when I knew data and intel could help with decision making and built workflows that speak to each other that otherwise wouldn't to provide insights we otherwise don't have access too."
+
+**Q3 (the system):** "Acquisition is decided on several data points, days supply, historical sales data, stocking needs by vehicle class, price points, recon ability time too line, merchandising and vendor audits for performance, lead conversation staffing etc."
+
+**Q5/Q6 (Vyaxis/PaceIQ):** "Vyaxis is my personal venture I have my own website Vyaxis.com and have some beta testing being done on one of my products paceIQ."
+
+**Q7 (the dead end):** "I hit a dead end when it got considerably more technical and my personality doesn't have the patience for that nor do I have the time."
+
+**Q8 (the learning):** "The learning is understanding that building these tools internally allow for process efficiencies better decision making etc."
+
+**Not yet answered:** Q2 (specific trigger moment — optional enhancement), Q4 (investigation path detail — partially covered by Q1), Q5 for tradeIQ (status unknown — must not be stated in essay), Q9 (training lane — defaulting to context, not standalone story), Q10 (employer boundary — flag at Gate 2/3 approval).
+
+### Interviewer read of Round 2 (labeled)
+
+- Rob is/was General Sales Manager at Gallatin CDJR; this work started December 2025 — USER-STATED
+- Beyond the role: built workflows connecting systems that don't natively speak to each other, producing insights otherwise inaccessible — USER-STATED
+- The system: acquisition decisions synthesize days supply, historical sales data, stocking needs by vehicle class, price points, recon capacity/time-to-line, merchandising, vendor performance audits, lead conversion, staffing — USER-STATED (industry-generic concepts; safe)
+- Vyaxis = Rob's personal venture, public website Vyaxis.com; PaceIQ in beta with testers — USER-STATED. Volunteering the public site + "don't hold back" reads as naming approval; confirm explicitly at gate — SAFE pending confirmation
+- Dead end: the build became considerably more technical than his patience and time allowed — USER-STATED. Note: he still got PaceIQ to beta; the wall is the setup for drive-to-grow, and must be framed as honest recognition of limits, never as quitting
+- Learning: building tools internally creates process efficiencies and better decision-making — USER-STATED; will be sharpened with the systems insight, not quoted flat
+
+### Round 2 — original questions (for reference)
 
 1. **Role & timeline.** Exact title and store when this started, and roughly when the curiosity kicked in.
 2. **The trigger moment.** One specific moment — a trade appraised, a unit that aged out, an auction buy that flopped, a report — where you first thought "why are we deciding it this way?" The 60-second version.

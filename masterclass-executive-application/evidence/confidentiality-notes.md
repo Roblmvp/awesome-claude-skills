@@ -24,8 +24,11 @@ SAFE | SAFE IF GENERALIZED | NEEDS ROB APPROVAL | REMOVE | DO NOT USE
 |---|---|---|---|---|
 | Rob-personal details (his role, his curiosity, his learning, his building) | SAFE | n/a | 2026-07-28 | Rob's blanket approval: "All about me" / "Don't hold back" (Round 1 G/H) |
 | Third-party details (customers, employees, dealership financials, vendor internals) | REMOVE unless individually cleared | Generalize | 2026-07-28 | Blanket approval covers Rob only; standing rules remain |
-| Naming Vyaxis, PaceIQ, tradeIQ in the application | NEEDS ROB APPROVAL | "tools I built to..." if not approved | 2026-07-28 | Round 2 Q6; also confirm ownership so naming creates no employer conflict (Q10) |
-| Dealership/store name in the application | NEEDS ROB APPROVAL | "the dealership" / "our store" | 2026-07-28 | Await Round 2 Q1 and Q10 |
+| Naming Vyaxis and PaceIQ in the application | SAFE pending final gate confirmation | "a venture I founded" / "a tool I built" if Rob reverses | 2026-07-28 | Rob volunteered: personal venture, public website Vyaxis.com, PaceIQ in beta. Personal ownership removes employer-asset concern for the tools themselves |
+| Naming tradeIQ / stating its status | DO NOT STATE STATUS | "and began mapping the same approach for trade appraisals" | 2026-07-28 | Status unverified; generic reference only if needed |
+| Dealership/store name (Gallatin CDJR) in the essay | NEEDS ROB PREFERENCE | "the dealership where I'm General Sales Manager" | 2026-07-28 | Application context is private-to-admissions; naming is normal but not required. Title stays either way |
+| Employer boundary (personal venture built while employed as GSM) | NEEDS ROB CONFIRMATION | Essay avoids any claim that dealership data/assets went into Vyaxis products | 2026-07-28 | Q10 unanswered. Mitigation: essay describes industry-generic decision inputs only; tools are framed as his own venture on his own time |
+| Acquisition decision inputs list (days supply, recon time-to-line, etc.) | SAFE | n/a | 2026-07-28 | Industry-standard concepts taught in any dealer 20-group; no store-specific strategy, pricing, or vendor terms disclosed |
 
 ## Removed Details Log
 

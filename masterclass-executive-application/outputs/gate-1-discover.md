@@ -1,6 +1,6 @@
 # Gate 1 — DISCOVER
 
-Status: READY FOR ROB'S APPROVAL — 2026-07-28
+Status: ✅ APPROVED BY ROB — 2026-07-28 ("1. Approve"; Story 1 primary)
 
 ## Deadline Alert (drives the whole schedule)
 
