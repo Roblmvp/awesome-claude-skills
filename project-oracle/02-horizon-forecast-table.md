@@ -1,0 +1,50 @@
+# ORACLE Deliverable 2 — Horizon Forecast Table
+
+**Base date:** 2026-07-28. Entries are **base-case** (probability-weighted toward Scenario A texture with B/D features); each row also carries upside/downside cases and confidence. Ranges, not points, per the no-unsupported-precision rule. Recession probability = cumulative chance an NBER recession has **begun** by that horizon (sums toward the 24-month 25%). SAAR = total; retail runs ~1M lighter this cycle. Dealer actions reference the playbooks in `01-executive-brief.md` §21–22.
+
+| Dimension | **3mo** (Oct '26) | **6mo** (Jan '27) | **9mo** (Apr '27) | **12mo** (Jul '27) | **15mo** (Oct '27) | **18mo** (Jan '28) | **21mo** (Apr '28) | **24mo** (Jul '28) |
+|---|---|---|---|---|---|---|---|---|
+| Economic growth (real GDP pace) | 1.5–2% | 1–2%; Q4 air-pocket risk | 1–1.5% (cumulative drag peak) | 1–2% (fork: A consolidates or B/C confirm) | 1–2% | 1.5–2% | 1.5–2.5% | 1.5–2.5% |
+| Inflation (CPI y/y) | 3.2–3.8% | 3.0–3.6% (MY27 tariff pricing lands) | 2.8–3.4% | 2.7–3.2% | 2.6–3.2% | 2.5–3.0% | 2.4–3.0% | 2.3–2.9% |
+| Interest rates (fed funds) | 3.50–3.75 hold; hike risk live | 3.50–4.00 | 3.50–4.00 | 3.25–4.00 (first-cut window opens, not assured) | 3.25–3.75 | 3.00–3.75 | 3.00–3.50 | 2.75–3.50 |
+| Labor market | Frozen; unemp 4.2–4.4% | 4.3–4.6% | 4.3–4.7% | 4.4–4.8% | 4.4–4.9% | 4.4–4.9% | 4.3–4.8% | 4.2–4.8% |
+| Consumer spending (real) | +1.5–2%, top-heavy | +1–2% | +1–1.5% | +1–2% | +1–2% | +1.5–2% | +1.5–2.5% | +1.5–2.5% |
+| Credit availability (auto) | Loose, still easing | Loose; recalibration at margins | Plateau; first tightening signs possible | Two-sided; vintage losses price in | Selective tightening risk rises | Stabilizing | Stable-to-easing | Easing if cuts arrived |
+| Auto-loan rates (avg new realized) | ~7.0% | 6.9–7.3% | 6.8–7.2% | 6.6–7.2% | 6.5–7.0% | 6.3–6.9% | 6.2–6.8% | 6.0–6.7% |
+| New-vehicle demand (SAAR) | 15.7–16.2M (pull-forward noise) | 15.3–16.0M (payback risk) | 15.4–16.0M | 15.5–16.1M | 15.5–16.2M | 15.6–16.3M | 15.6–16.4M | 15.5–16.5M |
+| Used-vehicle demand | Firm; substitution inflow | Firm | Strong spring; tax season + OBBBA yr-2 | Firm | Firm; off-lease wave peaking | Firm | Tightening supply pipeline visible | Scarcity premium re-emerging |
+| Vehicle affordability | Record-stressed, stable | Slight worsening (price pass-through) | Grinding | Slow income-led repair begins | Grinding | Slowly improving | Slowly improving | Improved vs today; still historically stretched |
+| Inventory (new days' supply) | 75–90, bifurcated | 80–95 (seasonal + payback) | 75–90 | 75–90 | 75–90 | 75–90 | 70–90 | 70–90 |
+| Incentives (% of ATP) | 7.0–7.5% | 7.2–8.0% | 7.0–8.0% | 7.0–8.0% | 7.0–8.0% | 6.8–7.8% | 6.5–7.8% | 6.5–7.5% |
+| Wholesale values (Manheim y/y) | +1 to +3% | 0 to +3% | 0 to +4% (spring bounce) | −1 to +3% | −2 to +2% (off-lease peak) | −1 to +3% | 0 to +4% | +1 to +5% (pipeline thins) |
+| Dealer gross (total store, y/y) | −2 to −5% | −3 to −6% | −2 to −5% | −1 to −4% | 0 to −4% | 0 to −3% | 0 to +2% | 0 to +3% |
+| Fixed operations (rev growth) | +3 to +6% | +3 to +6% | +3 to +6% | +3 to +6% | +2 to +6% | +2 to +5% | +2 to +5% | +2 to +5% |
+| Recession probability (cumulative, begun by horizon) | ~5% | ~9% | ~13% | ~16% | ~19% | ~21% | ~23% | **25%** |
+| Confidence in base case | High | Medium-High | Medium | Medium | Medium-Low | Medium-Low | Low-Medium | Low-Medium |
+| Dominant dealer action | Stand up dashboard; lender bench; 45-day clock; catalyst mgmt (FOMC/tariffs/midterms) | Defend gross through payback quarter; expense reset lands | Tax-season used offense; watch first-cut signals | Re-underwrite the year: A vs B/C posture decision | Vintage-loss watch; EV residual trough buys | Recovery positioning if C occurred; else steady | Begin used-scarcity positioning (2028 pipeline) | Harvest: consolidation, service capacity, market share from weak stores |
+
+## Horizon case detail (base / upside / downside, with leading indicators and triggers)
+
+### 3 months (Oct 2026) — Confidence: High
+**Base:** muddle-through holds. Fed holds Jul 29 (hike = immediate Scenario-D re-rate); Q2 GDP prints ~1.5–2%; Canada 50% (Aug 19) creates brand-specific noise and pre-buy pull-forward; SAAR stays ~16M on fleet + pull-forward; midterm/truce catalysts stack in late window. **Upside:** oil <$80 durably + strong Jul–Aug retail → A-texture confirmation, sentiment recovery extends. **Downside:** July hike, or Canada retaliation on parts, or claims break >230K. **Leading indicators:** FOMC statement language; Aug–Sep retail/fleet split (pull-forward payback test); Brent. **Dealer:** execute §21 immediate plan; forward parts buys before Aug 19; do not add fat-brand inventory into the catalyst window.
+
+### 6 months (Jan 2027) — Confidence: Medium-High
+**Base:** Q4 payback quarter — the pull-forward bill comes due as MY27 tariff pricing (+4–8% retail) lands; retail SAAR sags within range; incentive discipline strains but holds; post-midterm policy direction resets (tariff codification vs restraint); truce renewal (~Nov 1) resolved one way or the other. **Upside:** tariff-dividend-type stimulus enacted → Q4–Q1 demand pop. **Downside:** discipline breaks (incentives >8.5%) → GPU step-down; or truce lapses → supply-shock overlay activates. **Leading:** incentive % trend, holiday retail, December FOMC/SEP. **Dealer:** protect Q4 gross rather than chase year-end volume records; year-end used stock-up only at market-clearing prices.
+
+### 9 months (Apr 2027) — Confidence: Medium
+**Base:** peak cumulative drag — two years of high rates + one year of tariff pricing; labor freeze thins further; spring tax season + OBBBA year-2 refunds support used demand; surveys' first-cut window opens (not assured; futures disagree). **Upside:** inflation ~2.8% with claims <220K → cut delivered → relief rally in rate-sensitive demand. **Downside:** negative payroll prints cluster → B/C confirmation; SLOOS turns to net tightening. **Leading:** claims trend vs payroll revisions; SLOOS Jan/Apr; spring Manheim bounce amplitude. **Dealer:** tax-season used offense (buy in Jan–Feb, sell Mar–May); hold new-car caution until the Fed fork resolves.
+
+### 12 months (Jul 2027) — Confidence: Medium
+**Base:** the fork. A-path: inflation ~3%, no recession begun (cumulative ~16%), SAAR ~15.8M, dealer gross stabilizing — re-lean toward balanced/offense. B/C-path: payroll stall visible, credit tightening arrived, defensive sets active. **Upside:** first cut + oil <$75 → E-features emerge. **Downside:** recession beginning (equity drawdown or oil re-shock the likely proximate cause). **Leading:** 3-mo payroll average, S&P drawdown, USMCA status (talks have a 2026-end soft deadline), CAI direction. **Dealer:** formal annual re-underwrite against the dashboard; adjust posture per trigger table, not narrative.
+
+### 15 months (Oct 2027) — Confidence: Medium-Low
+**Base:** second-order effects dominate — 2025–26 loose-vintage losses hit lender P&Ls (reserve builds, selective tightening); off-lease wave peaks ~2.8M annualized (used values' softest patch: −2 to +2%); EV used values trough as return wave lands; OEM production discipline tested by a full tariff-cost year. **Upside:** vintage losses benign (labor held) → credit stays open → volume grinds up. **Downside:** severity spiral — negative equity + softer wholesale → repo losses → advance-rate cuts (the accelerant scenario). **Leading:** subprime ABS DPD trend, Ally/COF reserve actions, 3-yr residuals, auction conversion. **Dealer:** buy the EV residual trough selectively (certified programs); re-check lender concentration before the tightening you've been warned about.
+
+### 18 months (Jan 2028) — Confidence: Medium-Low
+**Base:** normalization or early recovery. If C occurred in 2027, this is trough-to-recovery (short recessions being the modal historical auto shape); if A held, first genuine affordability progress — three years of ~4% income growth against roughly flat real vehicle prices. Fed likely cutting in most paths by now (3.00–3.75%). **Upside:** replacement demand from deferral years releases → SAAR >16.3M. **Downside:** D persisted — inflation never broke, rates never fell, SAAR stuck ~14.5–15M. **Leading:** real-wage trend, fleet-age print, cut cadence. **Dealer:** recovery positioning — staffing, used pipeline, and reconditioning capacity ahead of demand, funded by the liquidity you preserved.
+
+### 21 months (Apr 2028) — Confidence: Low-Medium
+**Base:** positioning window. The 2025–26 lease-origination weakness (24.1% penetration and drifting down) becomes a visible 2028–29 off-lease shortage — used scarcity premium re-emerges; buy-sell market re-rates strong franchises as the cycle's survivors consolidate; election-year fiscal proposals (both directions) add noise. **Upside:** broad E-features — the market re-learns growth. **Downside:** late-arriving C (cumulative ~23%). **Leading:** lease-return forecasts, wholesale conversion, blue-sky multiple trend. **Dealer:** lock used-vehicle sourcing channels (service lane, street, off-rental relationships) before scarcity reprices them; opportunistic acquisitions of exhausted competitors.
+
+### 24 months (Jul 2028) — Confidence: Low-Medium
+**Base:** most probable end-state — a structurally expensive ~15.5–16.5M market; dealer count lower, groups larger; P&L permanently more fixed-ops- and used-weighted; affordability still the industry's unsolved problem (no entry-segment revival in-window; tariffs still pricing imports); EV share grinding to ~8–10% on cost parity rather than mandate. **The strategic scoreboard:** who used 2026–27 to build liquidity, lender breadth, service capacity, and cheap-car sourcing — and who spent it chasing volume. **Upside:** E realized — SAAR ~17M, broad income gains, early-cycle energy. **Downside:** D endured — a smaller, costlier market that never got relief. **Dealer:** the 24-month plan written today should be judged here: resilience score up, absorption >85%, used self-sufficiency >60%, and at least one accretive acquisition or divestiture executed.

@@ -1,0 +1,143 @@
+{
+  "packet": "ORACLE-forecast",
+  "version": "1.0.0",
+  "system": "ORACLE Economic Intelligence System (supervisor-and-specialist agentic architecture)",
+  "analysis_date": "2026-07-28",
+  "forecast_base_date": "2026-07-28",
+  "forecast_window_end": "2028-07-28",
+  "methodology_ref": "00-methodology-and-gates.md",
+  "evidence_ref": "04-evidence-ledger.md",
+  "probability_note": "Analyst-ensemble judgments, red-team adjusted (Gate 4). Not model outputs. Re-weight monthly or on any block1 trigger.",
+  "scenario_probabilities": {
+    "A_grinding_soft_landing": { "p": 0.28, "pre_red_team": 0.30, "definition": "No NBER recession; CPI drifts to 2.7-3.2% by mid-2027; Fed extended hold, cuts optional late-window; SAAR 15.5-16.3M" },
+    "B_rolling_slowdown": { "p": 0.19, "pre_red_team": 0.27, "definition": "Growth stalls near zero; isolated negative payroll months; incentive discipline breaks; retail SAAR 14.8-15.5M; no NBER event" },
+    "C_conventional_recession": { "p": 0.25, "pre_red_team": 0.23, "definition": "NBER recession begins in window; SAAR trough 13.5-14.5M; triggers ranked: equity/AI-capex retrench, oil re-shock, trade rupture, credit accident" },
+    "D_sticky_inflation_hawkish_fed": { "p": 0.20, "pre_red_team": 0.15, "definition": "CPI >=3.5% persists; no cuts, 1-2 hikes possible (contains market-priced futures path); auto APRs ~8%; SAAR 14.5-15.5M with prices rising" },
+    "E_upside_reacceleration": { "p": 0.08, "pre_red_team": 0.05, "definition": "Oil <$75 sustained; CPI to ~2.5% fast; early cuts; real income broadening; SAAR >16.5M" }
+  },
+  "supply_shock_overlay": {
+    "p_conditional": 0.25,
+    "nature": "Supply state that can land on any demand scenario; inverts gross logic (volume down, GPU up, 2021 mechanics)",
+    "sources": ["Section 338 Canada 50% eff 2026-08-19", "USMCA 10-yr wind-down triggered 2026-07-01", "rare-earth/Nexperia truce expiry ~2026-11-01", "Hormuz re-closure", "dealer-tech outage (operational variant)"]
+  },
+  "current_state_classification": {
+    "growth": "stable_weak_side",
+    "inflation": "moderate_deterioration_peaking",
+    "employment": "moderate_deterioration_hiring_side",
+    "credit_access": "moderate_improvement",
+    "credit_quality": "moderate_deterioration",
+    "liquidity": "stable",
+    "consumer_health": "unclear_conflicting_k_shaped",
+    "financial_conditions": "stable_tightening",
+    "auto_demand": "stable_retail_weak_side",
+    "vehicle_affordability": "severe_deterioration_level_stable_direction",
+    "vehicle_supply": "stable_bifurcated",
+    "dealer_profitability": "moderate_deterioration_fixed_ops_cushioned"
+  },
+  "key_anchors": {
+    "saar_jun_2026_m": 16.5,
+    "saar_fy2026_forecast_m": 15.8,
+    "retail_h1_yoy_pct": -4.1,
+    "atp_usd": 49758,
+    "incentives_pct_atp": 7.0,
+    "new_days_supply": 80,
+    "manheim_yoy_pct": 2.0,
+    "avg_new_payment_usd": 777,
+    "avg_amount_financed_usd": 44156,
+    "share_84mo_plus_pct": 23.9,
+    "share_payment_1000_plus_pct": 20.3,
+    "negative_equity_share_trades_pct": 29.6,
+    "negative_equity_avg_usd": -6884,
+    "new_apr_realized_pct": 7.0,
+    "fed_funds_range": "3.50-3.75",
+    "cpi_yoy_jun_pct": 3.5,
+    "core_cpi_yoy_jun_pct": 2.6,
+    "pce_yoy_may_pct": 4.1,
+    "unemployment_pct": 4.2,
+    "initial_claims_k": 187,
+    "dealertrack_cai": 104.6,
+    "subprime_abs_60dpd_pct": 6.9,
+    "off_lease_returns_2026e_m": 2.4,
+    "off_lease_returns_2027e_m": 2.8,
+    "gas_avg_usd_gal": 4.11,
+    "brent_usd_2026_07_27": 87.86
+  },
+  "horizon_forecasts": [
+    { "horizon_months": 3, "date": "2026-10", "saar_range_m": [15.7, 16.2], "cpi_range_pct": [3.2, 3.8], "fed_funds": "3.50-3.75 hold, hike risk live", "recession_cum_p": 0.05, "confidence": "high", "dealer_focus": "dashboard standup, lender bench, 45-day clock, catalyst management" },
+    { "horizon_months": 6, "date": "2027-01", "saar_range_m": [15.3, 16.0], "cpi_range_pct": [3.0, 3.6], "fed_funds": "3.50-4.00", "recession_cum_p": 0.09, "confidence": "medium_high", "dealer_focus": "defend Q4 gross through pull-forward payback; MY27 tariff pricing lands" },
+    { "horizon_months": 9, "date": "2027-04", "saar_range_m": [15.4, 16.0], "cpi_range_pct": [2.8, 3.4], "fed_funds": "3.50-4.00", "recession_cum_p": 0.13, "confidence": "medium", "dealer_focus": "tax-season used offense; watch first-cut window and SLOOS" },
+    { "horizon_months": 12, "date": "2027-07", "saar_range_m": [15.5, 16.1], "cpi_range_pct": [2.7, 3.2], "fed_funds": "3.25-4.00", "recession_cum_p": 0.16, "confidence": "medium", "dealer_focus": "annual re-underwrite: A vs B/C posture decision by trigger table" },
+    { "horizon_months": 15, "date": "2027-10", "saar_range_m": [15.5, 16.2], "cpi_range_pct": [2.6, 3.2], "fed_funds": "3.25-3.75", "recession_cum_p": 0.19, "confidence": "medium_low", "dealer_focus": "lender vintage-loss watch; EV residual trough buys; off-lease peak" },
+    { "horizon_months": 18, "date": "2028-01", "saar_range_m": [15.6, 16.3], "cpi_range_pct": [2.5, 3.0], "fed_funds": "3.00-3.75", "recession_cum_p": 0.21, "confidence": "medium_low", "dealer_focus": "recovery positioning or steady-state; affordability repair begins" },
+    { "horizon_months": 21, "date": "2028-04", "saar_range_m": [15.6, 16.4], "cpi_range_pct": [2.4, 3.0], "fed_funds": "3.00-3.50", "recession_cum_p": 0.23, "confidence": "low_medium", "dealer_focus": "lock used sourcing before 2028-29 scarcity premium; opportunistic M&A" },
+    { "horizon_months": 24, "date": "2028-07", "saar_range_m": [15.5, 16.5], "cpi_range_pct": [2.3, 2.9], "fed_funds": "2.75-3.50", "recession_cum_p": 0.25, "confidence": "low_medium", "dealer_focus": "harvest: consolidation, service capacity, share from weak stores" }
+  ],
+  "block1_triggers": [
+    { "indicator": "initial_claims_4wk_avg", "warning": ">260000 sustained 4wks", "current": 187000, "action": "defensive posture: aging 45d, B/C playbook" },
+    { "indicator": "brent_or_gas", "warning": "brent>100 30d or gas>4.50", "current": "brent ~88, gas 4.11", "action": "mix rebalance hybrids/compacts/used-EV" },
+    { "indicator": "fed_hike", "warning": "any 2026 hike or 2yr>4.75", "current": "hold expected 2026-07-29", "action": "scenario D set: hedge floorplan, subvention-first, reprice aged in 7d" },
+    { "indicator": "sp500_drawdown", "warning": "-15% sustained 30d", "current": "near highs, AI-concentrated", "action": "cap $60K+ inventory 30 days supply; pivot down-market" },
+    { "indicator": "dealertrack_cai", "warning": "2 consecutive declines or approvals<71%", "current": 104.6, "action": "activate backup lenders; raise min cash-down marginal paper" },
+    { "indicator": "usmca_sec338", "warning": "talks collapse / Canada retaliation on autos-parts", "current": "wind-down triggered; Canada 50% eff 2026-08-19", "action": "forward-buy parts 90d; pre-order exposed models; supply-shock playbook" }
+  ],
+  "catalyst_calendar": [
+    { "date": "2026-07-29", "event": "FOMC decision (Warsh 2nd meeting)" },
+    { "date": "2026-07-30", "event": "Q2 2026 advance GDP" },
+    { "date": "2026-07-31", "event": "June PCE; UMich final" },
+    { "date": "2026-07-28/31", "event": "ABG/LAD/GPI/AN Q2 earnings" },
+    { "date": "2026-08-early", "event": "July SLOOS; NY Fed Q2 HHDC" },
+    { "date": "2026-08-07", "event": "July jobs report" },
+    { "date": "2026-08-19", "event": "Section 338 Canada 50% effective" },
+    { "date": "2026-10-01", "event": "CA CARS Act effective" },
+    { "date": "2026-11-01", "event": "Rare-earth/Nexperia truce expiry (approx)" },
+    { "date": "2026-11-03", "event": "Midterm elections" }
+  ],
+  "top_risks": [
+    "front_end_gross_erosion_accelerates",
+    "credit_tightening_after_loose_vintages",
+    "negative_equity_severity_spiral",
+    "supply_shock_on_stocked_brand",
+    "oil_respike_over_100",
+    "equity_drawdown_breaks_top_decile_demand",
+    "fed_hikes_to_8pct_consumer_aprs",
+    "ev_residual_slide_into_2027_lease_wave",
+    "state_regulatory_wave_ca_cars_act",
+    "fixed_ops_share_loss_to_independents"
+  ],
+  "top_opportunities": [
+    "sub_15k_used_scarcity_premium",
+    "fixed_ops_moat_13yr_fleet",
+    "consolidation_at_bifurcated_multiples",
+    "used_ev_arbitrage_gas_spike",
+    "supply_shock_scarcity_gross_if_overlay_lands",
+    "subvention_capture_8k_price_equivalent",
+    "wholesale_dislocation_buying",
+    "talent_from_weaker_competitors"
+  ],
+  "payment_model": {
+    "method": "standard amortization M=P*(r/12)/(1-(1+r/12)^-n); validated within 1% of Edmunds reported payment",
+    "new_base": { "financed": 44156, "apr_pct": 7.0, "term_mo": 70, "payment": 770 },
+    "used_base": { "financed": 30414, "apr_pct": 10.8, "term_mo": 68, "payment": 600 },
+    "rate_sensitivity_per_100bp_usd_mo": 21,
+    "zero_apr_price_equivalent_usd": 7989,
+    "price_cut_pct_to_offset_100bp": 2.7
+  },
+  "invalidation_conditions": [
+    "two_plus_hikes_by_dec_2026_with_positive_payrolls",
+    "canada_50_implemented_and_us_mexico_collapse",
+    "sahm_trigger_while_claims_under_220k",
+    "nasdaq_minus_25_with_top_decile_spending_flat",
+    "core_cpi_over_4_with_brent_under_85",
+    "muvvi_over_plus5_yoy_during_offlease_build",
+    "dealertrack_cai_minus_5pts_in_one_quarter"
+  ],
+  "confidence_scores": {
+    "current_state_assessment": 0.85,
+    "3_6mo_forecasts": 0.7,
+    "9_12mo_forecasts": 0.55,
+    "15_24mo_forecasts": 0.4,
+    "scenario_probability_calibration": 0.5,
+    "dealer_translation_layer": 0.75
+  },
+  "source_summary": "100+ claims, Tier 1-2 weighted, full ledger with release dates, conflicts, and rejected-claims register in 04-evidence-ledger.md; all retrieved 2026-07-28"
+}
