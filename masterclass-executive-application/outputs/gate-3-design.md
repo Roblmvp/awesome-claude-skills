@@ -1,6 +1,6 @@
 # Gate 3 — DESIGN
 
-Status: READY FOR ROB'S APPROVAL — 2026-07-28 (narrative-architect + confidentiality-auditor simulated in-session per principle 8)
+Status: ✅ APPROVED BY ROB — 2026-07-28 ("Continue"; Version B architecture; store name kept generic by default — Rob may name Gallatin CDJR at Gate 4 if preferred)
 
 Structure only — no final prose is drafted until Rob approves an architecture (workflow rule). Opening lines below are concepts, not copy.
 

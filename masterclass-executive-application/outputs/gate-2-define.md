@@ -1,6 +1,6 @@
 # Gate 2 — DEFINE
 
-Status: READY FOR ROB'S APPROVAL — 2026-07-28 (story-strategist process simulated in-session per principle 8)
+Status: ✅ APPROVED BY ROB — 2026-07-28 ("Continue" after gate presentation; Vyaxis/PaceIQ naming proceeds per Rob's volunteered public disclosure, employer-boundary mitigation baked into wording, final check at Gate 5)
 
 ## Ranked Story Scorecard
 
