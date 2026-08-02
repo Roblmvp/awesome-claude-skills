@@ -1,6 +1,6 @@
 # STATE.md — Deal Log Factory build state
 
-- **Phase**: 4 — QA Gauntlet (COMPLETE, pending G4)
+- **Phase**: SHIPPED — gate-4-shipped (G4 approved 2026-08-02)
 - **G2**: approved; tags gate-1/2-approved local (remote rejects tag pushes, 403).
 - **Architecture**: build_deal_log.py = config-driven TRANSFORM of the committed July donor
   (styles/structure verbatim) + SPEC deltas. Full 31-tab wiring done in one pass (transform
@@ -9,7 +9,10 @@
   recalc hung. Fixed via `apt-get install libreoffice-calc`. recalc now ~11s.
 - **G3**: approved (incl. EX fix). Clean rebuild + `--finalize` (recalc + LO tab-color
   repair + password wipe). tools/qa_gauntlet.py: 15/15 PASS. QA_REPORT.md written.
-- **Next step**: WAIT for `APPROVED G4`. On approval: tag gate-4-shipped, final delivery.
+- **G4**: APPROVED. August_2026_Ford_Deal_Log_Master.xlsx delivered + committed.
+- **September playbook**: edit BUILD CONFIG in build_deal_log.py (month facts + closed
+  days), run `python3 build_deal_log.py --finalize`, update tools/qa_gauntlet.py month
+  constants, run the gauntlet, gate as needed. Environment needs `libreoffice-calc`.
 - **Branch**: `claude/august-2026-gallatin-deal-log-0zba2o` in roblmvp/awesome-claude-skills,
   project dir `deal-log-factory/`.
 - **Key facts a cold session must not rediscover**:
