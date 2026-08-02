@@ -1,0 +1,13 @@
+SCHEMA_VERSION = "1.0"
+WORK_MODELS = {"on_site", "hybrid", "remote", "field_based", "mixed", "unknown"}
+SOURCE_TYPES = {"official_employer", "official_ats", "official_corporate", "aggregator", "other_public", "unknown"}
+SOURCE_AUTHORITY = {"official_employer": 1, "official_ats": 2, "official_corporate": 3, "aggregator": 4, "other_public": 5, "unknown": 6}
+JOB_STATUSES = {"active", "inactive", "unknown"}
+MATCH_CLASSES = {"proven", "transferable", "developable", "unproven", "prohibitive", "unknown"}
+OPPORTUNITY_CLASSES = {"direct_fit", "bridge_fit", "strategic_stretch", "future_state", "manual_review"}
+EVIDENCE_STATUSES = {"verified_candidate_fact", "candidate_confirmed_fact", "approximate_candidate_confirmed_fact", "transferable_experience", "unknown", "prohibited_unsupported_claim"}
+ELIGIBLE_EVIDENCE = EVIDENCE_STATUSES - {"unknown", "prohibited_unsupported_claim"}
+ALLOWED_EVIDENCE_USES = {"fit_analysis", "resume_alignment", "interview_preparation"}
+CONFIDENTIALITY_CLASSES = {"public", "synthetic", "private", "restricted"}
+OPERATIONS = {"search", "map", "scrape", "batch_scrape", "crawl", "interact", "agent", "extract", "monitor"}
+TRACKING_KEYS = {"utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "gclid", "fbclid"}

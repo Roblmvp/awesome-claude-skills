@@ -1,0 +1,59 @@
+name: Career opportunity integrity
+on:
+  pull_request:
+    paths:
+      - 'AGENTS.md'
+      - '.codex/config.toml'
+      - 'docs/data-and-evidence-governance.md'
+      - 'career-opportunity-intelligence/**'
+      - 'tailored-resume-generator/**'
+      - '.github/workflows/career-opportunity-integrity.yml'
+      - '.gitignore'
+  push:
+    paths:
+      - 'career-opportunity-intelligence/**'
+      - 'tailored-resume-generator/**'
+      - 'AGENTS.md'
+      - '.codex/config.toml'
+      - 'docs/data-and-evidence-governance.md'
+      - '.github/workflows/career-opportunity-integrity.yml'
+      - '.gitignore'
+concurrency:
+  group: career-opportunity-integrity-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  offline-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - name: Compile and test without network dependencies
+        run: |
+          set -euo pipefail
+          python3 -m compileall -q career-opportunity-intelligence/scripts
+          python3 -m unittest discover -s career-opportunity-intelligence/tests -v
+          python3 -m unittest discover -s tailored-resume-generator/tests -v
+      - name: Validate committed JSON and private boundary
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          for path in Path('career-opportunity-intelligence').rglob('*.json'):
+              json.loads(path.read_text())
+          PY
+          git check-ignore .career-intelligence/demo/result.json
+      - name: Safety and local documentation checks
+        run: |
+          set -euo pipefail
+          python3 career-opportunity-intelligence/scripts/run_career_intelligence.py validate-config
+          python3 career-opportunity-intelligence/scripts/validate_repository_controls.py
+          python3 career-opportunity-intelligence/scripts/check_markdown_links.py
+          git diff --check

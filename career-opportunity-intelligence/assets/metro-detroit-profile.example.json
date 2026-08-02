@@ -1,0 +1,8 @@
+{
+  "profile_version": "public-example-v1",
+  "metro_area": "Metro Detroit",
+  "cities": ["Ann Arbor", "Auburn Hills", "Birmingham", "Dearborn", "Detroit", "Farmington Hills", "Livonia", "Novi", "Plymouth", "Pontiac", "Southfield", "Troy", "Warren"],
+  "country": "US",
+  "state": "MI",
+  "role_families": ["oem_dealer_field_operations", "automotive_finance_dealer_relationships", "automotive_saas_customer_success", "sales_enablement_dealer_training", "business_revenue_operations", "regional_dealer_group_operations", "adjacent_multilocation_b2b_leadership"]
+}

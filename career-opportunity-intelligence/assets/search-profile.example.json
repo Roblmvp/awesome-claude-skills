@@ -1,0 +1,12 @@
+{
+  "query": "fictional mobility careers Michigan",
+  "permitted_domains": [
+    "careers.example.com",
+    "ats.example.org"
+  ],
+  "geography": {
+    "country": "US",
+    "state": "MI"
+  },
+  "result_limit": 5
+}

@@ -1,0 +1,13 @@
+{
+  "employers": [
+    {
+      "name": "Example Mobility Company",
+      "official_domains": [
+        "careers.example.com"
+      ],
+      "verified_ats_domains": [
+        "ats.example.org"
+      ]
+    }
+  ]
+}

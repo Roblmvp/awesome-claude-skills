@@ -9,6 +9,7 @@ secrets*
 
 # Private data and live outputs (this repository is public)
 .firecrawl/
+.career-intelligence/
 .private/
 private/
 private-data/
