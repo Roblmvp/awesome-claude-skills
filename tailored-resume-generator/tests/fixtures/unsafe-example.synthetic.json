@@ -1,0 +1,27 @@
+[
+  {
+    "text": "Data Analyst, Northstar Retail, 2019-2024",
+    "status": "verified_candidate_fact",
+    "evidence_id": "resume-role-1"
+  },
+  {
+    "text": "Built Python automation scripts",
+    "status": "candidate_confirmed_fact",
+    "evidence_id": "candidate-note-2"
+  },
+  {
+    "text": "Created Tableau and Power BI dashboards",
+    "status": "verified_candidate_fact",
+    "evidence_id": "resume-skill-3"
+  },
+  {
+    "text": "Worked with a marketing team on campaign analysis",
+    "status": "transferable_experience",
+    "evidence_id": "resume-role-1"
+  },
+  { "text": "Expert SQL experience", "status": "job_requirement" },
+  { "text": "A/B testing experience", "status": "job_requirement" },
+  { "text": "HIPAA knowledge", "status": "unknown" },
+  { "text": "Wrote 50+ queries", "status": "prohibited_unsupported_claim" },
+  { "text": "Improved ROI by 35%", "status": "prohibited_unsupported_claim" }
+]
