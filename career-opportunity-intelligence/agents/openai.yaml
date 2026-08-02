@@ -1,0 +1,4 @@
+interface:
+  display_name: "Career Opportunity Intelligence"
+  short_description: "Offline evidence-safe opportunity analysis"
+  default_prompt: "Analyze synthetic or protected structured job data offline with deterministic provenance, matching, scoring, and planning controls."

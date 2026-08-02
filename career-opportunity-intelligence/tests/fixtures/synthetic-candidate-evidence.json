@@ -1,0 +1,32 @@
+[
+  {
+    "evidence_id": "ev-1",
+    "evidence_status": "verified_candidate_fact",
+    "evidence_category": "experience",
+    "supported_text": "Supported fictional partner operations.",
+    "source_reference": "synthetic:portfolio:1",
+    "employer": "Fictional Northstar Cooperative",
+    "role": "Partner Operations Lead",
+    "date_range": "2020-2024",
+    "approximation_metadata": null,
+    "confidentiality_class": "synthetic",
+    "allowed_uses": [
+      "fit_analysis"
+    ]
+  },
+  {
+    "evidence_id": "ev-2",
+    "evidence_status": "transferable_experience",
+    "evidence_category": "adjacent_experience",
+    "supported_text": "Transferable experience coordinating fictional multi-site teams.",
+    "source_reference": "synthetic:portfolio:2",
+    "employer": "Fictional Bluebird Group",
+    "role": "Operations Coordinator",
+    "date_range": "2018-2020",
+    "approximation_metadata": null,
+    "confidentiality_class": "synthetic",
+    "allowed_uses": [
+      "fit_analysis"
+    ]
+  }
+]
