@@ -1,0 +1,24 @@
+# Environment files and local credentials
+.env
+.env.*
+!.env.example
+*.local.json
+*.secret.*
+credentials*
+secrets*
+
+# Private data and live outputs (this repository is public)
+.firecrawl/
+.private/
+private/
+private-data/
+candidate-data/
+career-evidence/
+application-data/
+outputs/private/
+
+# Common local artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
