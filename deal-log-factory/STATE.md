@@ -1,11 +1,16 @@
 # STATE.md — Deal Log Factory build state
 
-- **Phase**: 1 — Spec Lock (SPEC.md written, pending G2)
-- **G1 record**: Rob replied `APPROVED CONTINUE` (blanket). Interpreted per SPEC.md §0 —
-  all 14 items in recommended form + D1–D5 fixes, NO column cuts.
-- **Last step**: SPEC.md frozen draft committed; derived August facts verified by script
-  (elapsed/left sequences, serials 46235–46265, DOW).
-- **Next step**: WAIT for `APPROVED G2`. Then Phase 2 prototype per SPEC §13.
+- **Phase**: 2 — Prototype/Build (COMPLETE, pending G3)
+- **G2**: approved; tags gate-1/2-approved local (remote rejects tag pushes, 403).
+- **Architecture**: build_deal_log.py = config-driven TRANSFORM of the committed July donor
+  (styles/structure verbatim) + SPEC deltas. Full 31-tab wiring done in one pass (transform
+  makes phased cloning moot — flagged in G3 package). `--test-deals` seeds the 7-deal matrix.
+- **Environment note**: container shipped LibreOffice WITHOUT the Calc component — any xlsx
+  recalc hung. Fixed via `apt-get install libreoffice-calc`. recalc now ~11s.
+- **Last step**: recalc clean (26,135 formulas, 0 errors); tools/verify_g3.py 44/44 passed;
+  EX-fix deviation (Explorer empty-row ✓ semantics) applied + flagged for G3 approval.
+- **Next step**: WAIT for `APPROVED G3`. Then Phase 3 residue purge is just a clean rebuild
+  (no --test-deals) + Phase 4 QA gauntlet.
 - **Branch**: `claude/august-2026-gallatin-deal-log-0zba2o` in roblmvp/awesome-claude-skills,
   project dir `deal-log-factory/`.
 - **Key facts a cold session must not rediscover**:
