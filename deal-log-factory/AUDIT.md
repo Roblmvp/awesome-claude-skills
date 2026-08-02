@@ -55,7 +55,7 @@ All sheets protected, **no password** (T4 pattern already in place). Fonts: Aria
 (day-tab grid 8pt, report titles 16pt). Currency format `$#,##0;[Red]($#,##0);"-"`.
 Day-tab print area `$A$1:$AH$70` (keeps product cols AM:AO and helpers off the printed page).
 
-## 2. Named ranges (82)
+## 2. Named ranges (78)
 
 - **Goals**: `GoalUnitsNew/Used/Total`, `GoalGrossNew/Used/Total`, `GoalPVRFront/Back/Total`,
   `GoalUnitsPerDay`, `GoalGrossPerDay`, `GoalSellingDays` → fixed Goals cells.

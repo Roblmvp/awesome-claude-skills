@@ -41,8 +41,8 @@ CONFIG = dict(
 )
 DONOR = dict(ABBR="Jul", NAME="July", MONTH_NUM=7, DAYS=31, SELLING=27)
 
-# Tab colors (SPEC §2)
-COLOR_WEEKDAY, COLOR_SATURDAY, COLOR_SUNDAY = "0B1F4D", "2E4A8F", "B8C4DC"
+# Tab colors (SPEC §2). Alpha must be FF: LibreOffice drops alpha-00 (transparent) tab colors.
+COLOR_WEEKDAY, COLOR_SATURDAY, COLOR_SUNDAY = "FF0B1F4D", "FF2E4A8F", "FFB8C4DC"
 YELLOW = "FFF6BE"
 
 # ============================================================ derived month facts
@@ -556,6 +556,76 @@ def seed_test_deals(wb):
             ws[f"{col}{r}"] = v
 
 # ============================================================ main
+def clear_passwords(wb):
+    """Donor carries a legacy protection password on Staff & Lists — Rob wants pwd-less."""
+    for ws in wb.worksheets:
+        p = ws.protection
+        p._password = None          # setter hashes; the stored hash lives in _password
+        p.algorithmName = p.hashValue = p.saltValue = p.spinCount = None
+
+# ------------------------------------------------------------ finalize (post-recalc)
+def sheet_color_map():
+    """Sheet name -> FF-alpha tab color per SPEC §2."""
+    m = {}
+    for d in F["days"]:
+        m[f"{A} {d}"] = (COLOR_SUNDAY if d in F["closed"] else
+                         COLOR_SATURDAY if F["dow"][d] == "Saturday" else COLOR_WEEKDAY)
+    for s in ["Guide", "Goals", "Scoreboard", "Deal Explorer", "Commissions", "Dashboard",
+              "Nightly Text", "Leaderboard"]:
+        m[s] = "FFC9A227"
+    m["Pay Plan"] = m["Staff & Lists"] = "FFA6A6A6"
+    m["Trade Report"] = "FF1E7A34"
+    return m
+
+def patch_tab_colors(path):
+    """LibreOffice's recalc rewrite strips every tabColor from this workbook. Re-inject
+    them at the zip level so LO's cached formula values are preserved untouched."""
+    import shutil
+    import zipfile
+    from xml.etree import ElementTree as ET
+
+    z = zipfile.ZipFile(path)
+    wbx = ET.fromstring(z.read("xl/workbook.xml"))
+    rels = ET.fromstring(z.read("xl/_rels/workbook.xml.rels"))
+    rid2tgt = {r.get("Id"): r.get("Target") for r in rels}
+    NS = {"m": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
+    RNS = "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id"
+    name2file = {sh.get("name"): "xl/" + rid2tgt[sh.get(RNS)].lstrip("/")
+                 for sh in wbx.find("m:sheets", NS)}
+    colors = sheet_color_map()
+    out = {}
+    for name, color in colors.items():
+        t = z.read(name2file[name]).decode("utf8")
+        t = re.sub(r"<tabColor[^/]*/>", "", t)
+        # (?![a-zA-Z]) keeps <sheetPr...> from matching <sheetProtection...>
+        if re.search(r"<sheetPr(?![a-zA-Z])", t):
+            t = re.sub(r"<sheetPr(?![a-zA-Z])([^>]*?)/>",
+                       rf'<sheetPr\1><tabColor rgb="{color}"/></sheetPr>', t, count=1)
+            t = re.sub(r"<sheetPr(?![a-zA-Z])([^>/]*)>(?!<tabColor)",
+                       rf'<sheetPr\1><tabColor rgb="{color}"/>', t, count=1)
+        else:
+            t = re.sub(r"(<worksheet[^>]*>)", rf'\1<sheetPr><tabColor rgb="{color}"/></sheetPr>', t, count=1)
+        out[name2file[name]] = t.encode("utf8")
+    tmp = str(path) + ".tmp"
+    with zipfile.ZipFile(path) as zin, zipfile.ZipFile(tmp, "w", zipfile.ZIP_DEFLATED) as zout:
+        for item in zin.infolist():
+            zout.writestr(item, out.get(item.filename, zin.read(item.filename)))
+    z.close()
+    shutil.move(tmp, path)
+    print(f"tab colors re-injected into {len(colors)} sheets")
+
+def finalize():
+    """Recalculate via LibreOffice, then repair what its rewrite drops."""
+    import json
+    import subprocess
+    r = subprocess.run([sys.executable, "/root/.claude/skills/xlsx/scripts/recalc.py",
+                        str(CONFIG["OUTPUT_FILE"]), "300"], capture_output=True, text=True)
+    print(r.stdout.strip())
+    rep = json.loads(r.stdout)
+    if rep.get("status") != "success" or rep.get("total_errors"):
+        raise SystemExit("recalc failed — aborting finalize")
+    patch_tab_colors(CONFIG["OUTPUT_FILE"])
+
 def sanity(wb):
     """In-generator QA: no donor-month residue in any string cell."""
     bad = []
@@ -583,6 +653,7 @@ def main(test_deals=False):
     build_guide(wb)
     if test_deals:
         seed_test_deals(wb)
+    clear_passwords(wb)
     sanity(wb)
     wb.save(CONFIG["OUTPUT_FILE"])
     print(f"saved {CONFIG['OUTPUT_FILE'].name} (test_deals={test_deals})")
@@ -590,4 +661,9 @@ def main(test_deals=False):
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--test-deals", action="store_true")
-    main(test_deals=p.parse_args().test_deals)
+    p.add_argument("--finalize", action="store_true",
+                   help="after building: recalc via LibreOffice + repair LO-dropped tab colors")
+    args = p.parse_args()
+    main(test_deals=args.test_deals)
+    if args.finalize:
+        finalize()
