@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.com/career-intelligence/fit-record.json",
+  "title": "Fit Record",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "job_id",
+    "requirement_matches"
+  ],
+  "properties": {
+    "schema_version": {},
+    "job_id": {},
+    "candidate_profile_reference": {},
+    "requirement_matches": {},
+    "proven_count": {},
+    "transferable_count": {},
+    "developable_count": {},
+    "unproven_count": {},
+    "prohibitive_count": {},
+    "unknown_count": {},
+    "evidence_coverage_score": {},
+    "qualification_fit_score": {},
+    "strategic_value_score": {},
+    "confidence_score": {},
+    "opportunity_class": {
+      "enum": [
+        "direct_fit",
+        "bridge_fit",
+        "strategic_stretch",
+        "future_state",
+        "manual_review"
+      ]
+    },
+    "material_gaps": {},
+    "clarification_questions": {},
+    "blocked_candidate_claims": {},
+    "eligible_evidence_ids": {},
+    "scoring_profile_version": {},
+    "audit_events": {}
+  },
+  "additionalProperties": true
+}

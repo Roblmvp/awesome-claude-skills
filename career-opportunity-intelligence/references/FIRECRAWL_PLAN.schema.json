@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.com/career-intelligence/firecrawl-plan.json",
+  "title": "Firecrawl Plan",
+  "type": "object",
+  "required": [
+    "operation_id",
+    "operation_type",
+    "purpose",
+    "input",
+    "enabled"
+  ],
+  "properties": {
+    "operation_id": {},
+    "operation_type": {
+      "enum": [
+        "search",
+        "map",
+        "scrape",
+        "batch_scrape",
+        "crawl",
+        "interact",
+        "agent",
+        "extract",
+        "monitor"
+      ]
+    },
+    "purpose": {},
+    "input": {},
+    "permitted_domains": {},
+    "excluded_domains": {},
+    "geography": {},
+    "result_limit": {},
+    "path_limits": {},
+    "max_depth": {},
+    "page_limit": {},
+    "only_main_content": {},
+    "output_formats": {},
+    "structured_schema_reference": {},
+    "requires_authentication": {},
+    "requires_human_approval": {},
+    "external_write": {},
+    "recurring": {},
+    "enabled": {},
+    "estimated_credit_category": {},
+    "safety_notes": {},
+    "command_preview": {},
+    "status": {}
+  },
+  "additionalProperties": true
+}

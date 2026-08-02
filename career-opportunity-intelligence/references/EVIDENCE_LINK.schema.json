@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.com/career-intelligence/evidence-link.json",
+  "title": "Evidence Link",
+  "type": "object",
+  "required": [
+    "evidence_id",
+    "evidence_status",
+    "evidence_category",
+    "supported_text",
+    "source_reference",
+    "confidentiality_class",
+    "allowed_uses"
+  ],
+  "properties": {
+    "evidence_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_status": {
+      "enum": [
+        "verified_candidate_fact",
+        "candidate_confirmed_fact",
+        "approximate_candidate_confirmed_fact",
+        "transferable_experience",
+        "unknown",
+        "prohibited_unsupported_claim"
+      ]
+    },
+    "evidence_category": {},
+    "supported_text": {
+      "type": "string"
+    },
+    "source_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "employer": {},
+    "role": {},
+    "date_range": {},
+    "approximation_metadata": {},
+    "confidentiality_class": {
+      "enum": [
+        "public",
+        "synthetic",
+        "private",
+        "restricted"
+      ]
+    },
+    "allowed_uses": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "fit_analysis",
+          "resume_alignment",
+          "interview_preparation"
+        ]
+      }
+    }
+  },
+  "additionalProperties": true
+}

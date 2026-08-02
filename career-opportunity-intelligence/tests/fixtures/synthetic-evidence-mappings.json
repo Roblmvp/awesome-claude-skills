@@ -1,0 +1,26 @@
+{
+  "job-1:required:1": {
+    "classification": "proven",
+    "evidence_ids": [
+      "ev-1"
+    ]
+  },
+  "job-2:required:1": {
+    "classification": "transferable",
+    "evidence_ids": [
+      "ev-2"
+    ]
+  },
+  "job-3:required:1": {
+    "classification": "developable",
+    "evidence_ids": []
+  },
+  "job-4:required:1": {
+    "classification": "unknown",
+    "evidence_ids": []
+  },
+  "job-4:required:2": {
+    "classification": "prohibitive",
+    "evidence_ids": []
+  }
+}

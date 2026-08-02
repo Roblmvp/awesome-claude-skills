@@ -1,0 +1,3 @@
+# Firecrawl Operations
+
+Phase 2B-1 executes nothing. Plan Search first for bounded discovery; Map only official career sites; Scrape known official pages with main-content output; Batch Scrape only approved URLs; Crawl narrow paths with page/depth limits; Interact only on public dynamic ATS pages after human approval; use Agent only as supplemental non-authoritative research; Extract only from approved sources; and define Monitor as disabled recurring work. Never submit forms, bypass login, include credentials in commands, or activate a monitor. OAuth belongs to a supported interactive client; unattended credentials belong only in protected runtime secret storage.

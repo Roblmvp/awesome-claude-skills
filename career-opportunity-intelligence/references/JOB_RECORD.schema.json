@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.com/career-intelligence/job-record.json",
+  "title": "Job Record",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "job_id",
+    "company_name",
+    "title",
+    "source_url",
+    "source_type"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "job_id": {
+      "type": "string"
+    },
+    "company_name": {
+      "type": "string"
+    },
+    "normalized_company_name": {},
+    "title": {
+      "type": "string"
+    },
+    "normalized_title": {},
+    "requisition_id": {},
+    "employment_type": {},
+    "job_status": {},
+    "posting_date": {},
+    "modified_date": {},
+    "first_discovered_at": {},
+    "last_verified_at": {},
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "canonical_source_url": {},
+    "application_url": {},
+    "source_type": {
+      "enum": [
+        "official_employer",
+        "official_ats",
+        "official_corporate",
+        "aggregator",
+        "other_public",
+        "unknown"
+      ]
+    },
+    "source_authority": {},
+    "employer_domain": {},
+    "official_source": {},
+    "discovery_queries": {},
+    "city": {},
+    "state": {},
+    "country": {},
+    "metro_area": {},
+    "work_model": {
+      "enum": [
+        "on_site",
+        "hybrid",
+        "remote",
+        "field_based",
+        "mixed",
+        "unknown"
+      ]
+    },
+    "field_based": {},
+    "office_attendance": {},
+    "travel_percent_min": {},
+    "travel_percent_max": {},
+    "overnight_expectation": {},
+    "compensation_currency": {},
+    "base_compensation_min": {},
+    "base_compensation_max": {},
+    "compensation_period": {},
+    "bonus_information": {},
+    "commission_information": {},
+    "equity_information": {},
+    "vehicle_information": {},
+    "compensation_source_text": {},
+    "summary": {},
+    "responsibilities": {},
+    "required_qualifications": {},
+    "preferred_qualifications": {},
+    "technologies": {},
+    "education_requirements": {},
+    "experience_years_min": {},
+    "experience_years_max": {},
+    "dealer_facing": {},
+    "people_leadership": {},
+    "quota_or_portfolio_ownership": {},
+    "role_family": {},
+    "role_subfamily": {},
+    "classification_confidence": {},
+    "content_hash": {},
+    "scrape_id": {},
+    "raw_snapshot_reference": {},
+    "unknown_fields": {},
+    "conflicts": {},
+    "provenance": {},
+    "source_sightings": {},
+    "audit_events": {}
+  },
+  "additionalProperties": true
+}
