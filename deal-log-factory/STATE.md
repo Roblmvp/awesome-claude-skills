@@ -1,9 +1,11 @@
 # STATE.md — Deal Log Factory build state
 
-- **Phase**: 0 — Ingest & Audit (COMPLETE, pending G1)
-- **Last step**: AUDIT.md written and verified (4-agent adversarial pass on grid anatomy,
-  dead columns, hardcodes, defects/protection). Gate 1 package posted in chat.
-- **Next step**: WAIT for Rob's `APPROVED G1: <item numbers>` token. Then Phase 1 (SPEC.md).
+- **Phase**: 1 — Spec Lock (SPEC.md written, pending G2)
+- **G1 record**: Rob replied `APPROVED CONTINUE` (blanket). Interpreted per SPEC.md §0 —
+  all 14 items in recommended form + D1–D5 fixes, NO column cuts.
+- **Last step**: SPEC.md frozen draft committed; derived August facts verified by script
+  (elapsed/left sequences, serials 46235–46265, DOW).
+- **Next step**: WAIT for `APPROVED G2`. Then Phase 2 prototype per SPEC §13.
 - **Branch**: `claude/august-2026-gallatin-deal-log-0zba2o` in roblmvp/awesome-claude-skills,
   project dir `deal-log-factory/`.
 - **Key facts a cold session must not rediscover**:
