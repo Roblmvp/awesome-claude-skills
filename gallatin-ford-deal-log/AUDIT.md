@@ -24,8 +24,10 @@ Method: two-pass openpyxl load (formula pass + `data_only` pass, value pass neve
 4. **Defect-adjacent: the rep roster is hardcoded in 3 places** — Staff & Lists A5:A20,
    Dashboard AD4:AD19, Commissions T4:T19 (16 identical literal names). Editing the
    roster on Staff & Lists does NOT propagate; the Dashboard/Commissions copies go stale.
-5. **Performance: 24,475 formulas total; Deal Explorer alone is 11,936 (49%).**
-   LibreOffice headless full recalc exceeded 120 s on the first attempt (see §8).
+5. **Performance: 24,475 formulas total; Deal Explorer alone is 11,936 (49%)** —
+   but measured full recalc is only **11.4 s** in LibreOffice headless (see §8).
+   The initial multi-minute timeouts were a build-container defect (missing
+   libreoffice-calc package), not the workbook.
 6. **Zero formula errors, zero pattern deviants, zero stray formulas** in the shipped
    July file. The six formula-column patterns are identical across all 31 tabs × 35 rows.
 
@@ -189,16 +191,22 @@ G47/G48/G49/C49/E49 (gross), C54–C59 (flags), C62/C63 (MTD chain), AI/AJ/AK/AL
 | D6 | behavior note | A row with Status=Delivered but **no Deal#** counts 0 everywhere, silently. A Delivered row missing Lender/gross also passes silently. Menu item 5 adds the red flag. |
 | D7 | none | 0 value errors, 0 broken links, 0 pattern deviants, 0 stray formulas, all named ranges + hyperlinks + DV sources resolve. |
 
-## 8. Performance budget
+## 8. Performance budget (measured)
 
-- Total formulas: **24,475**. Deal Explorer: **11,936 (49%)**; Commissions 1,781;
-  Dashboard 1,621; 31 day tabs 8,618; everything else ~520.
+- Total formulas: **24,475**. Deal Explorer: **11,936 (48.8%)** = 1,085 deal rows ×
+  (1 filter formula + 10 live links) + 1 counter; Commissions 1,781; Dashboard 1,621;
+  31 day tabs 8,618 (278 each); everything else ~520.
+- **Measured LibreOffice headless full recalc + save: 11.4 s wall clock, 0 errors on
+  all 24,475 formulas.** Excel desktop should be comparable or faster. The workbook is
+  NOT slow as shipped.
+- Investigation note: initial recalc attempts timed out at 5–9 minutes on *every* copy,
+  including a 6-formula subset — root cause was the build container missing the
+  `libreoffice-calc` package (soffice started but could not load any spreadsheet).
+  Fixed via apt; trap recorded in STATE.md so later phases don't rediscover it.
 - Volatile functions: `TODAY()` appears on every day tab (R1 chip) + 6 hub headers +
-  Dashboard BT4/BT5 + Nightly Text — ~40 volatile cells force broad recalc on every edit.
-- LibreOffice headless full recalc: **> 120 s** (first run killed at the 2-min timeout;
-  precise figure from the re-run is reported in the Gate 1 message). Excel desktop will
-  be faster but the Deal Explorer share dominates either way.
-- File size 720 KB / 42 sheets — open time dominated by formula rebuild, not I/O.
+  Dashboard BT4/BT5 + Nightly Text — ~40 volatile cells force broad recalc on every
+  edit, but the broad recalc itself is cheap (see measurement).
+- File size 720 KB / 42 sheets.
 
 ## 9. Simplification Menu
 

@@ -30,4 +30,9 @@ Wait for Rob's `APPROVED G1: <numbers>` → Phase 1 write SPEC.md from July anat
 ## Environment notes
 - Repo: roblmvp/awesome-claude-skills, branch claude/gallatin-ford-deal-log-aug-uc4qry, project dir gallatin-ford-deal-log/.
 - openpyxl 3.1.5 pip-installed; recalc via /root/.claude/skills/xlsx/scripts/recalc.py (LibreOffice).
+- **TRAP: the container ships WITHOUT libreoffice-calc** — soffice starts but cannot load any
+  spreadsheet, so recalc.py idles until its timeout and reports "LibreOffice timed out; formulas
+  were NOT recalculated". Fix (do this FIRST in any new session):
+  `apt-get update -q && DEBIAN_FRONTEND=noninteractive apt-get install -y -q libreoffice-calc`
+  Verify with a trivial convert-to csv before trusting any recalc timing.
 - Never save a data_only workbook. Quote 'Staff & Lists' in refs. No XLOOKUP/FILTER/SORT/UNIQUE/SEQUENCE; _xlfn. prefix for TEXTJOIN/IFS/SWITCH/etc.
