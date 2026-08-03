@@ -3,6 +3,8 @@ name: Label ready-to-merge skill listings
 on:
   pull_request_target:
     types: [opened, synchronize, reopened, edited]
+    paths:
+      - "README.md"
 
 permissions:
   contents: read
