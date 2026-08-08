@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Zapier__execute_zapier_write_action",
+      "mcp__Zapier__execute_zapier_read_action",
+      "mcp__Zapier__inspect_zapier_actions",
+      "mcp__Zapier__list_zapier_connections",
+      "mcp__36ae73fb-f1d7-437f-b44e-445242547f28__execute_zapier_write_action",
+      "mcp__36ae73fb-f1d7-437f-b44e-445242547f28__execute_zapier_read_action",
+      "mcp__36ae73fb-f1d7-437f-b44e-445242547f28__inspect_zapier_actions",
+      "mcp__36ae73fb-f1d7-437f-b44e-445242547f28__list_zapier_connections",
+      "mcp__Gmail__create_draft",
+      "mcp__Gmail__update_draft",
+      "mcp__Gmail__list_drafts",
+      "mcp__Gmail__search_threads",
+      "mcp__Gmail__get_message",
+      "mcp__Gmail__get_thread",
+      "mcp__66002072-7df5-4ffd-b46f-1d5b6b1dff5e__create_draft",
+      "mcp__66002072-7df5-4ffd-b46f-1d5b6b1dff5e__update_draft",
+      "mcp__66002072-7df5-4ffd-b46f-1d5b6b1dff5e__list_drafts",
+      "mcp__66002072-7df5-4ffd-b46f-1d5b6b1dff5e__search_threads",
+      "mcp__66002072-7df5-4ffd-b46f-1d5b6b1dff5e__get_message",
+      "mcp__66002072-7df5-4ffd-b46f-1d5b6b1dff5e__get_thread",
+      "mcp__Firecrawl_BidIQ__firecrawl_search",
+      "mcp__Firecrawl_BidIQ__firecrawl_scrape",
+      "mcp__Firecrawl_BidIQ__firecrawl_search_feedback",
+      "mcp__e1a1a624-54c1-4de0-87c7-5527065cc030__firecrawl_search",
+      "mcp__e1a1a624-54c1-4de0-87c7-5527065cc030__firecrawl_scrape",
+      "mcp__e1a1a624-54c1-4de0-87c7-5527065cc030__firecrawl_search_feedback"
+    ]
+  }
+}
