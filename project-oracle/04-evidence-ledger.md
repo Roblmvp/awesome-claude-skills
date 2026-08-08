@@ -159,3 +159,41 @@ Top-decile spending share 49.2% (Q2 2025 estimate, reaffirmed Feb 2026); Fitch s
 - All probabilities in this package are analyst-ensemble judgments (see methodology §9); none are model outputs presented as measurements.
 - The payment engine's arithmetic (standard amortization) was validated against Edmunds' reported payment within 1% before use.
 - Tier 5 material never overrides higher-tier data anywhere in the package.
+
+
+---
+
+# v1.1 addendum — August 2026 refresh (retrieved 2026-08-08)
+
+Delta research: four targeted agents (macro/Fed, credit, auto retail, affordability/policy). Rows extend the v1.0 ledger; same tier and confidence conventions.
+
+| # | Claim | Source (tier) | Period | Released | Conf | Notes |
+|---|---|---|---|---|---|---|
+| G1 | FOMC held 3.50–3.75%, vote 9–3; Hammack/Kashkari/Logan dissented for +25bp — most one-direction dissents since Sept 2016 | Fed statement (T1) | Jul 2026 | 2026-07-29 | H | Warsh presser opaque; day-of S&P −0.6% |
+| G2 | Q2 2026 advance GDP +1.5% (GDPNow 1.6%, street ~2.1%) | BEA (T1) | Q2 2026 | 2026-07-30 | H | Nowcast beat street decisively |
+| G3 | June PCE 3.7% y/y (−0.1% m/m); core 3.3% (+0.1% m/m) | BEA (T1) | Jun 2026 | 2026-07-31 | H | Best readings in a year; oil did the work; payback warned |
+| G4 | July payrolls −23K (cons +83–95K) — first negative print of cycle; May/June revised net −103K; 12-mo avg +34K | BLS (T1) | Jul 2026 | 2026-08-07 | H | Unemployment 4.1% via participation fall to 61.4% (5-yr low); AHE +3.2% |
+| G5 | Claims 199K (w/e Aug 1), 4-wk avg 198,750; continuing 1.801M (+24K) | DOL (T1) | Aug 2026 | 2026-08-06 | H | Low-fire intact; continuing-claims creep is the early crack |
+| G6 | Sept hike odds ~44% (from ~2/3 pre-jobs); S&P record close 7,757.64 Aug 7; 10Y 4.657%, 2Y 4.203%; Polymarket 2026 recession ~8% | CME/markets (T2/M) | Aug 2026 | 2026-08-07 | M | Bad-news-is-good-news regime |
+| G7 | Brent $82.15 (Aug 7); AAA gas $4.02; diesel $5.32 (+43% y/y); EIA Q3 gas proj $3.80 | TE/AAA/EIA (T1/T2) | Aug 2026 | 2026-08-07/08 | H | Diesel = new freight-cost stress; ceasefire uneasy, Hormuz talks ongoing |
+| G8 | July SLOOS (Q2 ref): auto standards "basically unchanged"; auto demand moderately WEAKER; card standards modestly tighter | Fed SLOOS (T1) | Q2 2026 | 2026-08-03 | H | Supply-push loosening — late-cycle pattern |
+| G9 | Fitch subprime 60+ DPD: Jan 6.90% → Feb 6.80% → Mar 6.11% (seasonal easing); Apr–Jul unpublished; H2 re-deterioration expected | Fitch via trade press (T2) | Q1 2026 | 2026 | M | Plateau bent down, not up |
+| G10 | Credit Acceptance Q2: adj $12.12 vs $11.46 cons (+20.6% y/y); record >11,000 active dealers; "strengthening origination trends" | CACC release (T2) | Q2 2026 | 2026-08-04 | H | Deep-subprime risk-on continues |
+| G11 | Subprime ABS wide open: Santander SDART 2026-1 $1.585B; Exeter/Westlake adding volume; no lender failures in window | SEC/ASR (T2) | Aug 2026 | 2026-08 | H | Modestly wider AAA concessions |
+| G12 | July SAAR 16.3M actual vs 16.7M Cox forecast; 1.36M units −1.8% y/y; retail −1.7%; fleet softened; FY26 held 15.8M | Cox (T2) | Jul 2026 | 2026-08-04 | H | Pull-forward payback; "settling into a slower pace" |
+| G13 | Q2 publics ALL BEAT: ABG adj $6.82 (cons ~$6.30); LAD adj $10.03, new GPU $2,718 stable 3 qtrs; AN adj $5.56, new GPU ~−14/15% worst; GPI $9.61 US new GPU >$3,300 (−11%); SAH record GP $616M; PAG adj $3.62 | Filings (T2) | Q2 2026 | Jul 29–31 | H | Group new GPU ~−11% y/y, orderly; fixed ops records; used mixed-firm |
+| G14 | Carvana Q2: 197,325 units +38%, revenue $7.38B +52%, net $513M, record EBITDA $769M, FY26 guide raised $2.7–3.0B | CVNA release (T2) | Q2 2026 | 2026-07-29 | H | Franchise-disruption watch item accelerating |
+| G15 | Canada Sec 338: 50% on Canadian-built motor vehicles effective 2026-08-19; proclamations Jul 20; ~$20B goods; OVERRIDES USMCA preferences; Trump threatening expansion; talks "nasty" but live | White & Case/GHY/WaPo (T2/T4) | Aug 2026 | Jul 20–Aug 6 | H | First-ever use of 1930 Sec 338 authority |
+| G16 | Sec 301 forced-labor duties in force since Jul 24: 10% (~14 partners) / 12.5% (46 economies); auto/parts scope in FR Annexes I/II — UNVERIFIED | USTR/FR (T1) | Jul 2026 | 2026-07-28 | M | Do not assert autos included without annex check |
+| G17 | USMCA: agreement persists to 2036 under annual reviews after US declined extension Jul 1; US-Mexico rounds continue; Canada excluded | White & Case (T2) | Jul 2026 | Jul 2026 | H | Refines v1.0 "10-yr wind-down" framing |
+| G18 | Rare-earth/Nexperia truce expiry pinned 2026-11-10; consensus rollover, no official signal | Trade analysis (T3/T4) | 2026 | Aug 2026 | M | |
+| G19 | Venezuela ~1.0M b/d (+17.6% y/y, multiyear high); Russia sanctions waivers ~300M bbl into market | Yahoo/CFR (T3/T4) | Jun 2026 | 2026 | M | Oil-supply offsets building |
+| G20 | Tariff dividend: dead — no funding vehicle post-SCOTUS/Sec-122 expiry; Dem rebate bill is messaging | Fact-checks (T4) | Aug 2026 | 2026 | M-H | De-escalated as stimulus prospect |
+| G21 | Negative equity current: 28% of trades underwater, avg −$6,905 | Trade aggregation (T2/T4) | Q2/Q3 2026 | 2026-08 | M | Essentially unchanged vs baseline |
+
+### Integrity annex additions (v1.1)
+- **Timing corrections:** NY Fed Q2 HHDC releases Aug 11 (not early Aug as v1.0 expected); July Dealertrack CAI ~Aug 10–11; July VAI Aug 17 — all post-date this edition and are treated as catalysts.
+- **Conflict resolved:** policy agent's "ceasefire declared over" sourced to early-July reporting; superseded by Aug 7 reads (uneasy holding, Hormuz talks, Brent $82). Fresher source governs.
+- **Conflict resolved:** a CBT/X item citing a 16.9M July SAAR projection was a stale forecast iteration; Cox's updated page (16.7 forecast / 16.3 actual) is authoritative.
+- **Unverified, excluded:** a "2.72%" July CPI nowcast (stale Aug-2025 Cleveland Fed page); an HNGN "$1.69T/32-yr high" item (403); PAG new-GPU definitional discrepancy ($4,374 vs $4,782) — flagged for 10-Q reconciliation, direction (−11%) used.
+- **Full-July Manheim print:** not locatable at run time; mid-July 211.5 (+2.0% y/y) stands as latest verified. Verify first in September run.

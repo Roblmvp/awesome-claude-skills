@@ -9,6 +9,20 @@
 
 ---
 
+## v1.1 addendum — August 8, 2026 monthly refresh
+
+**Canonical probabilities updated (governance log in `03-scenario-matrix.md`): A 27 / B 24 / C 25 / D 17 / E 7 · supply-shock overlay ~40%.** The body of this brief remains the v1.0 (July 28) record; sections below should be read with these August facts on top:
+
+1. **The hiring freeze broke first.** July payrolls −23K — the first negative print of the cycle — with net −103K revisions; participation 61.4% (5-yr low); unemployment 4.1% for bad reasons. Layoffs stayed at record lows (claims sub-200K): stall speed without firings. The B-scenario "payroll revisions negative" condition FIRED; the 2-of-3-negative-months condition arms with the September 4 report.
+2. **The hike scare died in nine days.** FOMC held 9–3 on July 29 (three dissents for +25bp — most one-way since 2016); the jobs miss then collapsed September hike odds to ~44%. June PCE improved to 3.7%/3.3%. Q2 GDP printed +1.5% (GDPNow said 1.6%; the street said 2.1%).
+3. **The July SAAR payback arrived on schedule:** 16.3M vs the 16.7M forecast, retail −1.7%, no fleet rescue — exactly the pull-forward risk §10 flagged. Yet **all six public dealer groups beat Q2 earnings** (ABG $6.82 vs ~$6.30 consensus) on orderly ~−11% new-GPU compression, record fixed ops, and firm used — the §15 glide-path call, not the street's bear case.
+4. **Credit stayed loose with a demand-side wrinkle:** SLOOS standards unchanged but auto demand weaker; subprime delinquency eased seasonally (Mar 6.11% off the 6.90% record); ABS wide open; CACC at record dealer count. NY Fed Q2 and July CAI land August 11.
+5. **The supply shock now has a date:** Canada's 50% on Canadian-built vehicles fires **August 19, overriding USMCA preferences**, talks "nasty" but live, expansion threatened — overlay raised to ~40%. Section 301 forced-labor duties took effect July 24 (auto scope unverified). Truce expiry pinned Nov 10. Oil eased (Brent $82, gas $4.02) but **diesel $5.32 (+43% y/y)** is the new freight-cost stress.
+
+**v1.0 grade sheet (pre-registered):** FOMC hold ✓ · GDP-side ✓ (nowcast framework beat street) · ABG/dealer-earnings direction ✓ (orderly compression with cushions, vs street −15%) · July pull-forward payback ✓ · labor-freeze-thinning ✓ (direction right, pace faster than base case). Five for five on direction; the labor call under-estimated speed.
+
+---
+
 ## 1. Executive summary
 
 The U.S. auto retail economy in late July 2026 is running on a **narrow, credit-extended, top-heavy demand base that is holding — but holding on terms that compress dealer margins and punish balance-sheet sloppiness.** Sales pace is the best of the year (June SAAR 16.5M, July forecast 16.7M [E1]) yet *retail* sales fell 4.1% in H1 — the headline is fleet-flattered [E2]. Credit is the loosest since 2015 [C1] while subprime delinquency sits at 32-year records [C3] — lenders are stretching terms and financing record negative equity to keep payments possible, which sustains today's volume by borrowing against tomorrow's severity. The Fed under new Chair Kevin Warsh is hawkish and on hold at 3.50–3.75% with markets pricing **hikes, not cuts**, into 2027 [B5, B6]. The H1 Iran war pushed CPI to 4.2% before June's retreat to 3.5% [B1, A12]; oil remains the live swing variable.

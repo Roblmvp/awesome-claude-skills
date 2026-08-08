@@ -1,6 +1,6 @@
 # ORACLE Deliverable 3 — Scenario Matrix
 
-**Base date:** 2026-07-28 · Probabilities are post-red-team (Gate 4), sum to 100%. The **supply-shock overlay** (~25%) is not a sixth scenario: it is a production/trade disruption that can land on top of any scenario and inverts the gross-profit logic (volume down, GPU up). Raise/lower conditions govern the monthly re-weighting.
+**Base date:** 2026-07-28 · **Probabilities re-weighted 2026-08-08 (v1.1) — see governance log at the end of this file for canonical current values (A 27 / B 24 / C 25 / D 17 / E 7 · overlay ~40%).** Body text below preserves the v1.0 record. Probabilities sum to 100%. The **supply-shock overlay** (~25%) is not a sixth scenario: it is a production/trade disruption that can land on top of any scenario and inverts the gross-profit logic (volume down, GPU up). Raise/lower conditions govern the monthly re-weighting.
 
 ## Scenario A — Grinding Soft Landing · **28%** (was 30% pre-red-team)
 
@@ -102,3 +102,21 @@
 - Every re-weight must state: what evidence moved, which raise/lower condition fired, and the delta. No silent drift.
 - The set must always sum to 100%; the overlay is tracked separately as a conditional.
 - Version control: this is v1.0 (2026-07-28). Pre-red-team draft (A30/B27/C23/D15/E5) is preserved in the methodology file's Gate-4 record for auditability.
+
+
+---
+
+## Governance log — v1.1 re-weight (2026-08-08)
+
+Per the probability-governance rules above. Canonical probabilities are now: **A 27 / B 24 / C 25 / D 17 / E 7 · overlay ~40%**. The scenario definitions and action sets above are unchanged; the body text retains v1.0's red-team record for audit.
+
+| Scenario | v1.0 | v1.1 | Evidence moved / condition fired |
+|---|---|---|---|
+| A Grinding Soft Landing | 28% | **27%** | Supports: June PCE 3.7/3.3 (from 4.1/3.4), July hold 9–3, claims 198.75K 4-wk, July SAAR 16.3 in-band. Injury: "labor frozen-but-stable" leg — July payrolls −23K, participation 61.4% |
+| B Rolling Slowdown | 19% | **24%** | **Raise condition FIRED: "payroll revisions run negative" (net −103K).** Also B-consistent: first negative payroll print of cycle (1 of 3 months; 2-of-3 condition not yet), SLOOS reports weaker auto demand, July retail −1.7%, Cox "settling into a slower pace" |
+| C Conventional Recession | 25% | **25%** | Labor break is C-adjacent, but no C-confirming signal fired: claims sub-200K, S&P record 7,758, credit loosest in decade, recession markets ~8%. Red-team no-double-count rule applied — the August evidence describes B, not C |
+| D Sticky Inflation / Hawkish Fed | 20% | **17%** | Lower-side evidence: PCE 4.1→3.7, oil $88→$82, gas $4.02, July hold. Kept alive: three dissents FOR +25bp (most one-way since 2016), ~44% Sept hike still priced (the <10%-for-2-meetings lower condition NOT met) |
+| E Upside Reacceleration | 8% | **7%** | "Payrolls resume >150K/mo" condition moved opposite direction; oil retreat and Venezuela ramp (~1.0M b/d) partially offset |
+| Supply-shock overlay | ~25% | **~40%** | Canada Sec 338 50% on Canadian-built vehicles signed Jul 20, effective Aug 19, **overrides USMCA preferences**; expansion threatened; talks "nasty" but live; Sec 301 forced-labor duties in force Jul 24 (auto scope unverified); truce expiry pinned Nov 10 |
+
+Block-1 kill-switch status at re-weight: **0 of 6 fired** (claims 198.75K · Brent $82.15/gas $4.02 · no hike, 2Y 4.20 · S&P record · CAI 104.6 fifth gain · Canada armed-not-landed). Sources and release dates: `04-evidence-ledger.md` v1.1 addendum. Next scheduled re-weight: 2026-09-08, or immediately on any Block-1 trigger.

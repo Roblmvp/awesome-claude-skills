@@ -1,6 +1,6 @@
 # ORACLE Deliverable 5 — Dealer Early-Warning Dashboard
 
-**Base date:** 2026-07-28 · **Recommended cadence:** weekly for Block 1 and store-level indicators; monthly for the rest, refreshed the week after the BLS jobs report.
+**Base date:** 2026-07-28 · **Status update 2026-08-08 appended at end of file (all Block-1 current values refreshed there).** · **Recommended cadence:** weekly for Block 1 and store-level indicators; monthly for the rest, refreshed the week after the BLS jobs report.
 **Current direction** is as of the base date, from the evidence ledger. **Type:** L = leading, C = coincident, G = lagging, S = structural, M = market-implied, X = sentiment, A = automotive-specific.
 
 Reading rule: no single indicator triggers a strategy change. Act when **two or more Block-1 triggers fire together**, or when one fires and is confirmed by your own store-level block. Thresholds are decision aids derived from historical cycle behavior and this cycle's levels — they are judgment, not science.
@@ -102,3 +102,25 @@ These confirm or refute macro signals in YOUR market before national data does. 
 | ~Nov 1 | Rare-earth/Nexperia truce expiry | Chip/parts supply risk reprice |
 | Nov 3 | Midterm elections | Tariff codification, dividend checks, CFPB posture, EV policy stakes |
 | Oct–Dec | USMCA talk milestones; CA CARS Act effective (Oct) | Structural supply-chain and compliance triggers |
+
+
+---
+
+# Status update — 2026-08-08 (v1.1)
+
+**Block-1 kill-switch readings (0 of 6 fired):**
+
+| Trigger | Jul 28 | Aug 8 | Status |
+|---|---|---|---|
+| Initial claims 4-wk avg | 187K | **198,750** (continuing claims +24K creep) | OK — off the lows, no layoff wave |
+| Brent / gas | $88 / $4.11 | **$82.15 / $4.02** · diesel **$5.32 +43% y/y** (new watch item) | WATCH — fuel easing, freight cost rising |
+| Fed | hold expected, 38% hike priced | **Held 9–3 Jul 29** (3 dissents for +25bp); ~44% Sept priced, falling; 2Y 4.20 | WATCH |
+| S&P 500 | near highs | **Record 7,757.64 Aug 7** | WATCH (concentration unchanged) |
+| Dealertrack CAI | 104.6, 5th gain | 104.6 stands; **July print + NY Fed Q2 land Aug 11**; SLOOS: standards unchanged, auto demand weaker | OK |
+| USMCA / Canada 338 | wind-down; Aug 19 pending | **ARMED — 50% fires Aug 19, no USMCA relief; talks "nasty" but live** | ALERT |
+
+**New indicator added to Block 5 watchlist:** diesel price (freight-cost passthrough to parts/vehicles) — warning >$5.50 sustained.
+
+**B-scenario condition log:** "payroll revisions negative" FIRED (−103K). "2-of-3 negative payroll months": 1 of 3 (Jul −23K; Jun +20K; May +63K) — the September 4 jobs report is the formal tripwire.
+
+**Updated catalyst calendar:** Aug 11 NY Fed Q2 HHDC + July CAI · Aug 12 July CPI · Aug 17 July VAI · **Aug 19 Canada 50% effective** · Sep 4 August jobs report (B-condition tripwire) · Sep 15–16 FOMC (~44% hike priced) · Oct 1 CA CARS Act · Nov 3 midterms · Nov 10 truce expiry.

@@ -1,12 +1,12 @@
 # PROJECT ORACLE V3 — National Automotive Economic Intelligence & Dealer Executive Briefing
 
-**Run date:** 2026-07-28 · **Forecast window:** Oct 2026 → Jul 2028 (8 horizons) · **Version 1.0**
+**Run date:** 2026-07-28 · **Latest refresh:** 2026-08-08 (v1.1) · **Forecast window:** Oct 2026 → Jul 2028 (8 horizons)
 
 An evidence-based, red-teamed executive outlook for U.S. automotive dealers, dealer groups, OEM field leaders, and lenders — produced by a governed supervisor-and-specialist agentic research architecture (7 concurrent research specialists + supervisor integrity review + adversarial red-team economist, across 5 quality gates).
 
 ## The answer in one line
 
-A grinding, K-shaped, credit-extended market: no near-term collapse (28% grinding soft landing is the single most likely outcome), but a 64% combined chance of adverse regimes (rolling slowdown 19% / recession within 24 months 25% / sticky-inflation-hawkish-Fed 20%), an 8% upside case, and a ~25% supply-shock overlay (Canada tariffs, USMCA wind-down, chip/rare-earth truce expiry) that would cut volume but *raise* dealer gross — so dealers should manage liquidity and aging as survival variables, ride the fixed-ops and used-scarcity moats, expand lender benches before tightening arrives, and run the pre-committed trigger playbook rather than predictions.
+A grinding, K-shaped, credit-extended market whose hiring freeze just broke (July payrolls −23K): no near-term collapse (27% grinding soft landing remains the single most likely outcome), but a 66% combined chance of adverse regimes (rolling slowdown 24% / recession within 24 months 25% / sticky-inflation-hawkish-Fed 17%), a 7% upside case, and a ~40% supply-shock overlay (Canada's 50% tariff fires Aug 19 with no USMCA relief; truce expiry Nov 10) that would cut volume but *raise* dealer gross — so dealers should manage liquidity and aging as survival variables, ride the fixed-ops and used-scarcity moats, expand lender benches before tightening arrives, and run the pre-committed trigger playbook rather than predictions.
 
 ## Package contents
 

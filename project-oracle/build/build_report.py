@@ -33,11 +33,11 @@ def rounded_bar_v(x, y, w, h, r, fill, opacity=1.0, tip=""):
 # ---------------- 1. scenario spectrum ----------------
 def chart_spectrum():
     W, BAR_H, GAP = 1000, 46, 2
-    segs = [  # display order: benign -> adverse (diverging arms)
-        ("E", "Upside", 8,  "var(--sc-E)", "#fff",     "E — Upside Reacceleration: 8%"),
-        ("A", "Soft landing", 28, "var(--sc-A)", "#131c2b", "A — Grinding Soft Landing: 28%"),
-        ("B", "Rolling slowdown", 19, "var(--sc-B)", "#131c2b", "B — Rolling Slowdown: 19%"),
-        ("D", "Sticky inflation", 20, "var(--sc-D)", "#131c2b", "D — Sticky Inflation / Hawkish Fed: 20%"),
+    segs = [  # display order: benign -> adverse (diverging arms) · v1.1 2026-08-08
+        ("E", "Upside", 7,  "var(--sc-E)", "#fff",     "E — Upside Reacceleration: 7%"),
+        ("A", "Soft landing", 27, "var(--sc-A)", "#131c2b", "A — Grinding Soft Landing: 27%"),
+        ("B", "Rolling slowdown", 24, "var(--sc-B)", "#131c2b", "B — Rolling Slowdown: 24%"),
+        ("D", "Sticky inflation", 17, "var(--sc-D)", "#131c2b", "D — Sticky Inflation / Hawkish Fed: 17%"),
         ("C", "Recession", 25, "var(--sc-C)", "#fff",  "C — Conventional Recession (24-mo window): 25%"),
     ]
     total_gap = GAP * (len(segs) - 1)
@@ -58,7 +58,7 @@ def chart_spectrum():
     # polarity axis under labels
     out.append(f'<text x="0" y="{BAR_H+40}" font-size="10" letter-spacing="1.5" fill="var(--muted)">&#9668; MORE BENIGN</text>')
     out.append(f'<text x="{W}" y="{BAR_H+40}" text-anchor="end" font-size="10" letter-spacing="1.5" fill="var(--muted)">MORE ADVERSE &#9658;</text>')
-    return f'<svg viewBox="0 0 {W} {H}" width="100%" role="img" aria-label="Scenario probabilities: E 8, A 28, B 19, D 20, C 25 percent">' + "".join(out) + "</svg>"
+    return f'<svg viewBox="0 0 {W} {H}" width="100%" role="img" aria-label="Scenario probabilities: E 7, A 27, B 24, D 17, C 25 percent">' + "".join(out) + "</svg>"
 
 # ---------------- 2. SAAR line ----------------
 def chart_saar():
@@ -66,7 +66,7 @@ def chart_saar():
     ML, MR, MT, MB = 40, 46, 16, 34
     pw, ph = W - ML - MR, H - MT - MB
     months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
-    vals   = [14.8, 15.8, 16.1, 16.1, 16.1, 16.5, 16.7]
+    vals   = [14.8, 15.8, 16.1, 16.1, 16.1, 16.5, 16.3]
     y0, y1 = 14.0, 17.0
     def X(i): return ML + pw * i / (len(vals) - 1)
     def Y(v): return MT + ph * (1 - (v - y0) / (y1 - y0))
@@ -75,22 +75,18 @@ def chart_saar():
         out.append(f'<line x1="{ML}" y1="{fnum(Y(g))}" x2="{W-MR}" y2="{fnum(Y(g))}" stroke="var(--grid)" stroke-width="1"/>')
         out.append(f'<text x="{ML-8}" y="{fnum(Y(g)+4)}" text-anchor="end" font-size="11" fill="var(--muted)">{g}</text>')
     out.append(f'<line x1="{ML}" y1="{fnum(Y(y0))}" x2="{W-MR}" y2="{fnum(Y(y0))}" stroke="var(--baseline)" stroke-width="1"/>')
-    solid = " ".join(f"{fnum(X(i))},{fnum(Y(v))}" for i, v in enumerate(vals[:6]))
+    solid = " ".join(f"{fnum(X(i))},{fnum(Y(v))}" for i, v in enumerate(vals))
     out.append(f'<polyline points="{solid}" fill="none" stroke="var(--series)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>')
-    out.append(f'<line x1="{fnum(X(5))}" y1="{fnum(Y(vals[5]))}" x2="{fnum(X(6))}" y2="{fnum(Y(vals[6]))}" stroke="var(--series)" stroke-width="2" stroke-dasharray="5 4" stroke-linecap="round"/>')
     for i, v in enumerate(vals):
-        m = months[i]; f = " (forecast)" if i == 6 else ""
-        tip = f"{m} 2026: {v}M SAAR{f}"
-        if i == 6:
-            out.append(f'<circle cx="{fnum(X(i))}" cy="{fnum(Y(v))}" r="4.5" fill="var(--surface)" stroke="var(--series)" stroke-width="2"/>')
-        else:
-            out.append(f'<circle cx="{fnum(X(i))}" cy="{fnum(Y(v))}" r="4" fill="var(--series)"/>')
+        m = months[i]
+        tip = f"{m} 2026: {v}M SAAR" + (" (missed 16.7M forecast)" if i == 6 else "")
+        out.append(f'<circle cx="{fnum(X(i))}" cy="{fnum(Y(v))}" r="4" fill="var(--series)"/>')
         out.append(f'<circle cx="{fnum(X(i))}" cy="{fnum(Y(v))}" r="12" fill="transparent" data-tip="{tip}" tabindex="0" role="img" aria-label="{tip}"/>')
         out.append(f'<text x="{fnum(X(i))}" y="{H-12}" text-anchor="middle" font-size="10.5" fill="var(--muted)">{m}</text>')
     out.append(f'<text x="{fnum(X(5))}" y="{fnum(Y(16.5)-12)}" text-anchor="middle" font-size="11.5" font-weight="500" fill="var(--ink)">16.5</text>')
-    out.append(f'<text x="{fnum(X(6)+8)}" y="{fnum(Y(16.7)+4)}" font-size="11.5" font-weight="500" fill="var(--ink)">16.7F</text>')
+    out.append(f'<text x="{fnum(X(6)+8)}" y="{fnum(Y(16.3)+4)}" font-size="11.5" font-weight="500" fill="var(--ink)">16.3</text>')
     out.append(f'<text x="{fnum(X(0))}" y="{fnum(Y(14.8)-12)}" text-anchor="middle" font-size="11" fill="var(--muted)">14.8</text>')
-    return f'<svg viewBox="0 0 {W} {H}" width="100%" role="img" aria-label="SAAR by month 2026, rising from 14.8 million in January to 16.5 in June, 16.7 forecast for July">' + "".join(out) + "</svg>"
+    return f'<svg viewBox="0 0 {W} {H}" width="100%" role="img" aria-label="SAAR by month 2026, rising from 14.8 million in January to 16.5 in June, then easing to 16.3 in July against a 16.7 forecast">' + "".join(out) + "</svg>"
 
 # ---------------- 3. recession cumulative ----------------
 def chart_recession():

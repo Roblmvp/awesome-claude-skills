@@ -1,32 +1,29 @@
 # ORACLE Deliverable 8 — One-Page Dealer Action Brief
 
-**July 28, 2026 · Outlook through July 2028 · Full analysis: `01-executive-brief.md`**
+**August 8, 2026 · v1.1 · Outlook through July 2028 · Full analysis: `01-executive-brief.md` (v1.1 addendum)**
 
 ## What you should know
 
-The market is holding — June SAAR 16.5M, the best of the year — but on the narrowest base in modern retail: **retail sales are down 4.1%**, 63% of new-car buyers earn $100K+, and ~1M buyers have priced out entirely. Payments ($777–813/mo), amounts financed ($44K), 84-month terms (24%), and negative equity (−$6,884 on 30% of trades) are all records. Credit is the **loosest since 2015** while subprime delinquency sits at 32-year highs — lenders are stretching structure to keep volume alive. The Fed under Kevin Warsh is hawkish and on hold; markets price **hikes, not cuts** — auto-rate relief is not coming (±100bp only moves a payment ~$21/mo anyway). Tariffs survived the Supreme Court (Section 232's 25% intact), Canada gets hit with 50% duties Aug 19, and USMCA is in wind-down. Front-end gross keeps compressing; **fixed ops and used scarcity are the profit refuges.** Odds: 28% grinding soft landing · 19% rolling slowdown · 25% recession within 24 months · 20% sticky-inflation/hawkish-Fed · 8% upside — plus a ~25% chance of a **supply shock** (Canada/USMCA/chip-truce) that would cut volume but *raise* gross, 2021-style.
+**The hiring freeze broke first.** July payrolls printed **−23K** — the first negative month of this cycle, with 103K of back revisions — while layoffs stayed at record lows (claims still sub-200K). The Fed held 9–3 on July 29 (three dissents *for* a hike) and the hike scare collapsed within days; September hike odds are ~44% and falling. Inflation improved (PCE 4.1%→3.7%, oil $82, gas $4.02 — though **diesel is $5.32, +43%**, a new freight-cost stress). July SAAR eased to **16.3M against a 16.7M forecast** with retail −1.7% — the pull-forward payback we flagged arrived on schedule. Yet **every public dealer group beat Q2 earnings**: gross compression stayed orderly (~−11% new GPU), fixed ops carried, used held. Credit remains the loosest in a decade, with one new wrinkle — banks report *weaker auto demand*. **Canada's 50% tariff on Canadian-built vehicles fires August 19 with no USMCA relief.** Updated odds: **27%** soft landing · **24%** rolling slowdown (↑ from 19 — the payroll-revisions condition fired) · **25%** recession · **17%** sticky-inflation (↓ from 20) · **7%** upside — and the **supply-shock overlay is now ~40%** (from ~25%).
 
 ## What you should watch (weekly — two together = act)
 
-**① Initial claims** >260K 4-wk avg · **② Oil/gas** Brent >$100 or gas >$4.50 · **③ Fed** any hike (decision Jul 29) · **④ S&P 500** −15% for 30 days · **⑤ Auto credit** Dealertrack CAI down 2 months or your approvals <71% · **⑥ Trade** USMCA talks collapse / Canada retaliation — plus your own lost-sale reasons, cash-down offered, and aged-unit water.
+**① Claims** >260K 4-wk avg (now 199K) · **② Oil/gas** Brent >$100 or gas >$4.50 (now $82/$4.02 — watch diesel $5.32) · **③ Fed** any 2026 hike (Sept 15–16, ~44% priced) · **④ S&P 500** −15% for 30 days (now at records) · **⑤ Auto credit** CAI down 2 months or your approvals <71% (July CAI + NY Fed Q2 land **Aug 11**) · **⑥ Canada/USMCA** — Aug 19 is the date. Plus: July CPI Aug 12; your own lost-sale reasons and aged-unit water.
 
-## What you should do now (next 90 days)
+## What you should do now (next 30 days)
 
-1. **Liquidity floor:** cash + unused lines ≥ 2 months of fixed expenses; excess into T-bills, not inventory.
-2. **Lender bench:** add 2+ lenders (one credit union, one subprime specialist) — 60–90-day lead time, free option.
-3. **45-day used clock** hard, priced to market weekly; service-lane appraisal on every RO >$500.
-4. **Expense reset to 2019-plus-inflation** — the 2021–22 windfall is not coming back.
-5. **Fixed-ops first:** absorption >85% target; declined-work recapture list live in 30 days; one apprentice per 4 techs.
-6. **Merchandise by payment band** (sub-$600 used anchor; subvented new; OBBBA interest-deduction close on U.S.-assembled).
-7. **Before Aug 19:** forward-buy fast-moving parts; pre-order Canada/Mexico-exposed models.
-8. **Stress test** the P&L at SAAR 14M / GPU −15% / floorplan +100bp — controller presents the gap by Sep 1.
+1. **Before Aug 19:** forward-buy fast-moving parts; pre-order Ontario-built models you'll need through year-end; re-quote body-shop parts contracts.
+2. **Hold the July plan's spine** — 2-month liquidity floor, lender bench +2, 45-day used clock, 2019-plus-inflation expense base. Nothing in August's data loosens those; the labor print tightens them.
+3. **Lean defensive on staffing:** the freeze is breaking on the hiring side — fill only revenue-critical seats; protect techs; variable-weight new comp plans.
+4. **Payment-band merchandising harder:** demand is narrowing to affluent buyers (Cox's own words); anchor sub-$600/mo used and subvented new; OBBBA close on U.S.-assembled.
+5. **Watch the Aug 11–12 data cluster** (NY Fed Q2 delinquency, July credit index, July CPI) — two bad prints there plus the labor break would justify the 40-day defensive aging clock ahead of schedule.
 
 ## What you should prepare for
 
-**Q4 2026:** demand air pocket after tariff pull-forward; MY27 stickers +4–8%; midterms + truce expiry (~Nov 1) + CA CARS Act (Oct). **2027:** lender tightening as loose 2025–26 vintages season; off-lease wave peaks (used values' softest patch; EV residual trough = selective buys); the Fed fork resolves. **2028:** used-supply pipeline thins again — lock cheap-car sourcing channels *now*; consolidation window pays fortress balance sheets.
+**Aug 19:** Canada tariff lands — brand-specific allocation cuts and price moves on Ontario-built product within weeks (2021 mechanics: volume down, gross **up** on affected lines — hold gross without apology). **September:** FOMC with live hike risk; a hot July/August CPI revives Scenario D. **Fall:** possible second student-loan default wave; CA CARS Act Oct 1; truce expiry Nov 10; midterms Nov 3. **The B-scenario tripwire:** a second negative payroll month (Sept 4 report) formally fires the 2-of-3 condition — defensive set goes live.
 
 ## What would change the strategy
 
-**Go defensive** (aging to 40 days, hiring freeze, marketing −20% to retention): claims >260K + one more Block-1 trigger. **Go Scenario-D** (hedge floorplan, subvention-first, reprice aged in 7 days): any 2026 hike. **Go offense** (buy inventory/stores/talent): supply shock lands on a brand you stock, or oil <$75 + claims <220K + cut delivered. **Rebuild the whole outlook:** two hikes with positive payrolls; recession signal while claims still <220K; core CPI >4% with cheap oil; used values +5% y/y during the off-lease wave.
+**Go defensive now:** claims >260K, or a second negative payroll print, or CAI down twice. **Go Scenario-D:** September hike. **Go offense:** Canada shock lands on a brand you stock (buy forward, hold gross), or oil <$75 + cut delivered. **Rebuild the outlook:** Sahm-rule trigger while claims sit under 220K — the freeze broke in a novel way and the indicator set needs rebuilding (we are closer to this test than in July; watch it).
 
-*Probabilities are judgments, not guarantees. Sources, dates, and confidence ratings: `04-evidence-ledger.md`. Refresh monthly or on any trigger.*
+*Probabilities are judgments, not guarantees. Deltas and evidence: `03-scenario-matrix.md` governance log, `04-evidence-ledger.md` v1.1 addendum. Next edition: September 8.*
